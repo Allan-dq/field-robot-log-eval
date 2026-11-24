@@ -26,7 +26,7 @@ def prepare(workdir: Path, fixture: Path) -> config.Config:
     shutil.copy(fixture / "manifest.json", data / "manifest.json")
     missions = sorted(json.loads((fixture / "manifest.json").read_text())["missions"])
     cfg = config.load(data_dir=data)
-    return config.Config(cfg.base_url, cfg.repo, cfg.topics, missions, data)
+    return config.Config(cfg.base_url, cfg.repo, cfg.topics, missions, data)  # all topics
 
 
 def run_pipeline(cfg: config.Config) -> dict:

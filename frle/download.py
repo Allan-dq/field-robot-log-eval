@@ -43,7 +43,7 @@ def build_manifest(cfg: Config) -> dict:
     for mission in cfg.missions:
         entries = {Path(e["path"]).name: e for e in _tree(cfg, mission, "data")}
         files = {}
-        for topic in cfg.topics:
+        for topic in cfg.topics_for(mission):
             e = entries.get(f"{topic}.tar")
             if e is None:
                 raise FileNotFoundError(f"{mission}: no archive for topic {topic}")

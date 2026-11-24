@@ -16,7 +16,9 @@ def cfg(tmp_path):
     data = tmp_path / "data"
     shutil.copytree(FIXTURE / MISSION, data / "raw" / MISSION)
     shutil.copy(FIXTURE / "manifest.json", data / "manifest.json")
-    return config.load(data_dir=data)
+    import dataclasses
+
+    return dataclasses.replace(config.load(data_dir=data), missions=[MISSION], optional_topics={})
 
 
 def refresh_checksum(cfg, mission, topic):

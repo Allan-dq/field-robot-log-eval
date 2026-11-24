@@ -7,6 +7,8 @@ Independent project on public data; no affiliation with any company.
 - [x] Ingest: GrandTour zarr topic archives (download with sha256 checks) into canonical Parquet tables with a versioned schema, DuckDB views on top. Re-runs are idempotent, one mission can be re-ingested alone, and a broken archive fails only its own topic.
 - [x] Data quality per mission and topic, with criteria written down before the first run: [docs/data_quality.md](docs/data_quality.md). Latest report: [reports/qc.md](reports/qc.md).
 - [x] Evaluation: three onboard estimators scored against the total-station prism with evo (APE translation, lever arm from the URDF calibration, 10 s block-bootstrap intervals, paired comparisons). Protocol: [docs/evaluation.md](docs/evaluation.md). Latest report: [reports/eval.md](reports/eval.md).
+- [x] Summary across missions: [reports/summary.md](reports/summary.md).
+- [ ] Triage: some missions have total-station outliers (QC `no_jumps` warnings) that dominate the RMSE; attribute them before comparing.
 - [ ] RPE / drift per distance, KISS-ICP run of our own.
 - [ ] Triage and failure attribution.
 - [x] CI regression gate: the full pipeline runs on a committed 10 s fixture and is compared with a baseline under rules written in advance ([docs/regression_gate.md](docs/regression_gate.md)). 14 seeded faults (data problems and code bugs) are run through it: [reports/seeded_faults.md](reports/seeded_faults.md).
@@ -15,7 +17,7 @@ Independent project on public data; no affiliation with any company.
 ## Run
 ```bash
 uv venv --python 3.13 && uv pip install -e ".[dev]"
-make all     # download (about 41.5 MB), ingest, qc, eval
+make all     # download (about 932 MB), ingest, qc, summary
 make test
 make gate    # regression gate on the fixture
 make faults  # seeded faults through the gate
@@ -23,8 +25,8 @@ make faults  # seeded faults through the gate
 
 ## Data
 The GrandTour Dataset, Robotic Systems Lab, ETH Zurich (https://grand-tour.leggedrobotics.com/),
-Hugging Face `leggedrobotics/grand_tour_dataset`, CC BY-SA 4.0. Mission used so far: 2024-11-04-10-57-34
-(topics `prism_position`, `cpt7_ie_tc_odometry`, `dlio_map_odometry`, `anymal_state_odometry`, `tf`).
+Hugging Face `leggedrobotics/grand_tour_dataset`, CC BY-SA 4.0. Missions: all 42 public missions with prism ground truth (`scripts/list_missions.py`, about 932 MB of topic archives;
+topics `prism_position`, `dlio_map_odometry`, `anymal_state_odometry`, `tf`, plus `cpt7_ie_tc_odometry` for 2024-11-04-10-57-34).
 Raw data is not committed; `data/manifest.json` lists paths, sizes and checksums. The 10 s test fixture in
 `tests/fixtures/grandtour_10s/` is a cut of that mission under the same license.
 

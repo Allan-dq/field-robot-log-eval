@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 
 import yaml
@@ -17,6 +17,15 @@ class Config:
     topics: dict[str, str]
     missions: list[str]
     data_dir: Path
+    optional_topics: dict[str, list[str]] = field(default_factory=dict)
+
+    def topics_for(self, mission: str) -> dict[str, str]:
+        """Topics (and their tables) used for one mission."""
+        return {
+            t: table
+            for t, table in self.topics.items()
+            if t not in self.optional_topics or mission in self.optional_topics[t]
+        }
 
     @property
     def raw_dir(self) -> Path:
@@ -40,4 +49,7 @@ def load(config_path: Path | None = None, data_dir: Path | None = None) -> Confi
         topics=dict(raw["topics"]),
         missions=[str(m) for m in raw["missions"]],
         data_dir=data_dir or REPO / "data",
+        optional_topics={
+            k: [str(m) for m in v] for k, v in (raw.get("optional_topics") or {}).items()
+        },
     )

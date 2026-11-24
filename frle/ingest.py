@@ -132,7 +132,7 @@ def _write_atomic(path: Path, write) -> None:
 def ingest_mission(cfg: Config, mission: str, force: bool = False) -> list[TopicResult]:
     files = load_manifest(cfg)["missions"][mission]
     results = []
-    for topic, table in cfg.topics.items():
+    for topic, table in cfg.topics_for(mission).items():
         res = TopicResult(mission=mission, topic=topic, table=table, status="failed")
         tar_path = archive_path(cfg, mission, topic)
         out = parquet_path(cfg, table, mission, topic)

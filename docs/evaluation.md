@@ -25,6 +25,15 @@ Disclosure: while working out the frames (same day), a scratch script fitted a l
 - Paired comparison of two estimators: both are scored on the same prism timestamps, and each resample uses the same blocks for both; the interval is for the RMSE difference.
 - Limitation: the alignment is computed once and held fixed in the resamples, so the intervals leave out alignment uncertainty.
 
+## Across missions
+Written on 2026-11-24, after the one-mission results and before any other mission was downloaded or scored.
+
+- Missions: every public GrandTour mission on Hugging Face with prism ground truth, DLIO, leg odometry and tf (`scripts/list_missions.py`): 42 of 51. CPT7 only for 2024-11-04-10-57-34 (download size limit).
+- A mission is scored only if none of the used topics fails a data-quality check (warnings are fine) and the estimator has at least 500 pairs with the prism. Excluded missions are listed with the reason, never dropped silently.
+- Per mission: the protocol above (APE, block bootstrap intervals).
+- Summary per estimator: median and interquartile range of the per-mission RMSE, and the number of missions.
+- Paired comparison DLIO vs leg odometry: per-mission RMSE difference on the same prism timestamps; the number of missions where each one is better; median difference with a 95 % interval from resampling whole missions (2,000 resamples, seed 0).
+
 ## Amendments
 - 2026-11-24, while building the regression gate: the association no longer calls evo `associate_trajectories` with interpolation, because that resamples whichever trajectory has more poses. In the full mission that is always the estimate (the stated protocol), so the mission results did not change; on the 10 s fixture DLIO has fewer poses than the prism, and evo would have interpolated the ground truth. The estimate is now always the resampled one.
 - 2026-11-24, after the first run: added the horizontal/vertical RMSE split to the report, to show where the CPT7 error comes from (mostly vertical). No metric or setting changed.

@@ -6,7 +6,7 @@ import argparse
 import sys
 from pathlib import Path
 
-from frle import config, download, evaluate, gate, ingest, qc
+from frle import config, download, evaluate, gate, ingest, qc, summary
 from frle.config import REPO
 
 
@@ -28,6 +28,8 @@ def main(argv: list[str] | None = None) -> int:
     e = sub.add_parser("eval", help="APE against the prism -> reports/eval.{json,md}")
     e.add_argument("--mission", action="append")
     e.add_argument("--out", type=Path, default=REPO / "reports")
+    sm = sub.add_parser("summary", help="evaluation of all missions + summary -> reports/")
+    sm.add_argument("--out", type=Path, default=REPO / "reports")
     g = sub.add_parser("gate", help="regression gate on the committed fixture")
     g.add_argument("--update-baseline", action="store_true")
     args = p.parse_args(argv)
@@ -59,6 +61,11 @@ def main(argv: list[str] | None = None) -> int:
         results = [evaluate.evaluate_mission(cfg, m) for m in args.mission or cfg.missions]
         evaluate.write_reports(results, args.out)
         print((args.out / "eval.md").read_text())
+        return 0
+    if args.cmd == "summary":
+        result = summary.run(cfg)
+        summary.write_reports(result, args.out)
+        print((args.out / "summary.md").read_text())
         return 0
     if args.cmd == "gate":
         if args.update_baseline:

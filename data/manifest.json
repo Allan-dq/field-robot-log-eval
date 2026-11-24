@@ -1,6 +1,204 @@
 {
   "source": "leggedrobotics/grand_tour_dataset",
   "missions": {
+    "2024-10-01-11-29-55": {
+      "prism_position": {
+        "path": "2024-10-01-11-29-55/data/prism_position.tar",
+        "size": 3061760,
+        "sha256": "ee404e9272e179d4158c63da7bf268bb3ed3ceac5fdb573bdb353f1c099c913b"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-10-01-11-29-55/data/dlio_map_odometry.tar",
+        "size": 7147520,
+        "sha256": "6a896bb42d9acc2c0038024ede605df669500a36f85de87e4475abd2e6871193"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-10-01-11-29-55/data/anymal_state_odometry.tar",
+        "size": 10977280,
+        "sha256": "b1aa013817bf767ef51c2cfee6401d5d58f13d571f14cf4bc8d7e3d871d4a9ca"
+      },
+      "tf": {
+        "path": "2024-10-01-11-29-55/data/tf.tar",
+        "size": 30720,
+        "sha256": "7c08ea883dabe77695dfdc5093e1512f9bd5ad642918e386cb0748a2b695d491"
+      }
+    },
+    "2024-10-01-11-47-44": {
+      "prism_position": {
+        "path": "2024-10-01-11-47-44/data/prism_position.tar",
+        "size": 3072000,
+        "sha256": "d7953c79c66ecd937688f0927e7b7ad7677b7117af7e753c575506215d5cfb51"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-10-01-11-47-44/data/dlio_map_odometry.tar",
+        "size": 7188480,
+        "sha256": "2336896870d59ab19d19e505f9c0099ec8249e9024d5ae7b7fcbadd7884db4cd"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-10-01-11-47-44/data/anymal_state_odometry.tar",
+        "size": 11970560,
+        "sha256": "84446bdbbb6fb3c7f0039c6db962dfe83f8265c124c79658a40e8d583dc71d9a"
+      },
+      "tf": {
+        "path": "2024-10-01-11-47-44/data/tf.tar",
+        "size": 30720,
+        "sha256": "eb3c00f852806260a77f25804f89d171f612666712a1510ba4c4f3cf296cf819"
+      }
+    },
+    "2024-10-01-12-00-49": {
+      "prism_position": {
+        "path": "2024-10-01-12-00-49/data/prism_position.tar",
+        "size": 3010560,
+        "sha256": "d3dfa807bba2d55643ebaa3489297c91f703f364bfc415511f827019250fb751"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-10-01-12-00-49/data/dlio_map_odometry.tar",
+        "size": 7219200,
+        "sha256": "2f7f5e1ce852519b1a460db7da4c0678f5bd483916020c63ead8e17fbebbc738"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-10-01-12-00-49/data/anymal_state_odometry.tar",
+        "size": 12513280,
+        "sha256": "02cfe8a9e91340d18c2e0ff04ca6627b89ec474cbf807cda9f0b062ed9d861d1"
+      },
+      "tf": {
+        "path": "2024-10-01-12-00-49/data/tf.tar",
+        "size": 30720,
+        "sha256": "58700ac1b15d4ba18f96502883ce525a0f0b92f0e334ee1bc7a37791753e38c5"
+      }
+    },
+    "2024-11-02-17-10-25": {
+      "prism_position": {
+        "path": "2024-11-02-17-10-25/data/prism_position.tar",
+        "size": 3061760,
+        "sha256": "d9ef7ab934d6062a458556a3562cfcc3f2f63fdc6ba9ffa20fc3fae4dbb4d370"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-11-02-17-10-25/data/dlio_map_odometry.tar",
+        "size": 7168000,
+        "sha256": "4c0a3a5f331291fab3387f1d633858148d27858aa0ea0654b16eeb2cc98fe2a6"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-11-02-17-10-25/data/anymal_state_odometry.tar",
+        "size": 11448320,
+        "sha256": "94c9fb48a520475c91c53fa5239837de46fcf077d37f6d68c4ab48a193d2a875"
+      },
+      "tf": {
+        "path": "2024-11-02-17-10-25/data/tf.tar",
+        "size": 30720,
+        "sha256": "9d34f6fb3bc8890bf1ee7f601ad2030878e8e86f5a216ba08787266cdd12bdf5"
+      }
+    },
+    "2024-11-02-17-43-10": {
+      "prism_position": {
+        "path": "2024-11-02-17-43-10/data/prism_position.tar",
+        "size": 3031040,
+        "sha256": "d89b8b4d1306463c042dc5cba402fb4371a3822a97a8e7f83839c3fc54779931"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-11-02-17-43-10/data/dlio_map_odometry.tar",
+        "size": 7086080,
+        "sha256": "83a0acdd5fba889168bd49b617ea16e91b3e4f978fe3273a77847103497ffabd"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-11-02-17-43-10/data/anymal_state_odometry.tar",
+        "size": 9635840,
+        "sha256": "ea52edbab5f266842fd627c34b2b3f88315e0253c122dad762f4aad8141e01ea"
+      },
+      "tf": {
+        "path": "2024-11-02-17-43-10/data/tf.tar",
+        "size": 30720,
+        "sha256": "1fe009cb5f0082a44b260dcc3a7d332b892bf4d97cafb644876c801860f5f383"
+      }
+    },
+    "2024-11-02-21-12-51": {
+      "prism_position": {
+        "path": "2024-11-02-21-12-51/data/prism_position.tar",
+        "size": 3061760,
+        "sha256": "3511293c53bdc4af8a27437505086de5d63dedcab7df205466657e6da04733cc"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-11-02-21-12-51/data/dlio_map_odometry.tar",
+        "size": 7096320,
+        "sha256": "65ae89002a0e3ff53e008b31dc5007573a8977336256eeac9124755653ebfcff"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-11-02-21-12-51/data/anymal_state_odometry.tar",
+        "size": 10086400,
+        "sha256": "080f9de080b848e190ce0241f511bccb6acfbed362ee1b454313da88a0ca292b"
+      },
+      "tf": {
+        "path": "2024-11-02-21-12-51/data/tf.tar",
+        "size": 30720,
+        "sha256": "8203a60e8eef2ae6ff4fb2a5567052f5e68a162d02566d26ef4754285570f28a"
+      }
+    },
+    "2024-11-03-07-52-45": {
+      "prism_position": {
+        "path": "2024-11-03-07-52-45/data/prism_position.tar",
+        "size": 3020800,
+        "sha256": "4c2b400067986ac1fd5d96083c4a7475af9b3706a4783f0f5b2196b5576dfe44"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-11-03-07-52-45/data/dlio_map_odometry.tar",
+        "size": 7055360,
+        "sha256": "1da26c6ca8405a249c320bd370b50c423d750b0dd568bcdf51222f40a66f1823"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-11-03-07-52-45/data/anymal_state_odometry.tar",
+        "size": 9113600,
+        "sha256": "0812e44b3eb635c0b1f2989432677dc285d321f7945bde877f3ce32435676c5f"
+      },
+      "tf": {
+        "path": "2024-11-03-07-52-45/data/tf.tar",
+        "size": 30720,
+        "sha256": "b6f6ce6e6ae842eb9b3aaf735458066aba88a40720789abac03c0f471e7ab250"
+      }
+    },
+    "2024-11-03-08-17-23": {
+      "prism_position": {
+        "path": "2024-11-03-08-17-23/data/prism_position.tar",
+        "size": 3072000,
+        "sha256": "e557932b8c7691615314098e98c8c028aee830d4a63434101a166849e387872a"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-11-03-08-17-23/data/dlio_map_odometry.tar",
+        "size": 7086080,
+        "sha256": "7ee66245e112208b94468b9682ffcf4642256668af8a445b3af2d19aeacbe50a"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-11-03-08-17-23/data/anymal_state_odometry.tar",
+        "size": 9687040,
+        "sha256": "e1f8f34a652ef03a12e0ab3d6cdaa4c9c0b2968ef2b0a2909a5dbcb1bbf06e93"
+      },
+      "tf": {
+        "path": "2024-11-03-08-17-23/data/tf.tar",
+        "size": 30720,
+        "sha256": "f83ec037ac16221ca435102ae62858b4243951f08c2ab1e45ae3eeacf1e91b83"
+      }
+    },
+    "2024-11-03-13-59-54": {
+      "prism_position": {
+        "path": "2024-11-03-13-59-54/data/prism_position.tar",
+        "size": 3061760,
+        "sha256": "4f13457e4172141c12fb50a5a9cb3cc90fa8ebc190db70ff7eeb5dae24112491"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-11-03-13-59-54/data/dlio_map_odometry.tar",
+        "size": 7147520,
+        "sha256": "906ad45973293c7656525347245e5e21bcc5d6d032af7ca4f8ffa958030d0d8a"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-11-03-13-59-54/data/anymal_state_odometry.tar",
+        "size": 11130880,
+        "sha256": "b46e8135039039631f3f7104e87c852376003e4341ca7a4cab8ec6f273a5baa6"
+      },
+      "tf": {
+        "path": "2024-11-03-13-59-54/data/tf.tar",
+        "size": 30720,
+        "sha256": "0b8f806543bf92f22af19803769ab8737e2d00cab69236aa1530a2bf4112b06f"
+      }
+    },
     "2024-11-04-10-57-34": {
       "prism_position": {
         "path": "2024-11-04-10-57-34/data/prism_position.tar",
@@ -26,6 +224,710 @@
         "path": "2024-11-04-10-57-34/data/tf.tar",
         "size": 30720,
         "sha256": "f3c49b62cf38b777756024b57b0b2cd0852fc12ea91d45aeffa88bdbfb193aba"
+      }
+    },
+    "2024-11-04-12-55-59": {
+      "prism_position": {
+        "path": "2024-11-04-12-55-59/data/prism_position.tar",
+        "size": 3031040,
+        "sha256": "2ee29926b376d0ebd0b2703ee8cc1da1ee3bedd44c5c181c6ede1e9639ca9b9e"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-11-04-12-55-59/data/dlio_map_odometry.tar",
+        "size": 7229440,
+        "sha256": "26fcbdf72e1084c66acda03969131da2c9e85bec5d7c05772cb89902c56f80b2"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-11-04-12-55-59/data/anymal_state_odometry.tar",
+        "size": 12912640,
+        "sha256": "079e41b87d1b5adadff5292989d9c1a7c285e596c99b5d39f3d9fc9aaca1d500"
+      },
+      "tf": {
+        "path": "2024-11-04-12-55-59/data/tf.tar",
+        "size": 30720,
+        "sha256": "b6f07c9e55c133776db2521016978af9f288f17b18179ce8b199d8287b442b71"
+      }
+    },
+    "2024-11-04-13-07-13": {
+      "prism_position": {
+        "path": "2024-11-04-13-07-13/data/prism_position.tar",
+        "size": 3041280,
+        "sha256": "72d1a7936870293cd0c71858cfe2d41749eefbbbf0c74b2390798c124ac582fe"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-11-04-13-07-13/data/dlio_map_odometry.tar",
+        "size": 7137280,
+        "sha256": "3d8aa1607a8a5728deb8e5a66c1ec51021f5a65c6a38febdeebcdacd452235e6"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-11-04-13-07-13/data/anymal_state_odometry.tar",
+        "size": 10741760,
+        "sha256": "9f7977576dc2ab7054606694fd4fe9fee93fb7d978e62f7953e4af3d8f576e65"
+      },
+      "tf": {
+        "path": "2024-11-04-13-07-13/data/tf.tar",
+        "size": 30720,
+        "sha256": "01acf556c3fa848804f1d331106d2f987ad945603f2d9b7e1269432b4a839c7f"
+      }
+    },
+    "2024-11-04-16-05-00": {
+      "prism_position": {
+        "path": "2024-11-04-16-05-00/data/prism_position.tar",
+        "size": 3082240,
+        "sha256": "a907948e2dee904ecb910e7fd767b87c624c015e32486a76913f7ff99592e410"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-11-04-16-05-00/data/dlio_map_odometry.tar",
+        "size": 7198720,
+        "sha256": "3d1185ead33077e353ba632877087826c7ce5e9da9d27cfe0fefd2613616290b"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-11-04-16-05-00/data/anymal_state_odometry.tar",
+        "size": 12072960,
+        "sha256": "2f1a48aa7e602cf14871e3a5889da8152698721f2b8149f0fb3c4eeb8559ab4b"
+      },
+      "tf": {
+        "path": "2024-11-04-16-05-00/data/tf.tar",
+        "size": 20480,
+        "sha256": "01bb4b72cac7995e632ac6e9c5e1303f80b10088693f41da7e5e59e28d061ffb"
+      }
+    },
+    "2024-11-11-12-07-40": {
+      "prism_position": {
+        "path": "2024-11-11-12-07-40/data/prism_position.tar",
+        "size": 3051520,
+        "sha256": "6e4e3f5a429db2ac21985289e9ec04363f0789a16604a1300048d7ac9d6adf75"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-11-11-12-07-40/data/dlio_map_odometry.tar",
+        "size": 7475200,
+        "sha256": "81f9c55998442cdc1c68ee9d3d4fba4eee07c43521cae20fa72828b1229efc47"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-11-11-12-07-40/data/anymal_state_odometry.tar",
+        "size": 18001920,
+        "sha256": "8391d32dc9aa8752cd24ee20e3f4c7624b661f00ce71f568057ac529bbf91bb5"
+      },
+      "tf": {
+        "path": "2024-11-11-12-07-40/data/tf.tar",
+        "size": 30720,
+        "sha256": "414c5a3ccbf3490428146ba253b731d2b0f99309254a23fe3f4607933d2a2a1d"
+      }
+    },
+    "2024-11-11-12-42-47": {
+      "prism_position": {
+        "path": "2024-11-11-12-42-47/data/prism_position.tar",
+        "size": 3102720,
+        "sha256": "2916ba35f24c40f6e81dce56a45457f2f37e3e9e3236fe7f4db507fc178e6dfc"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-11-11-12-42-47/data/dlio_map_odometry.tar",
+        "size": 7178240,
+        "sha256": "71637cb7b5d221ea8b4e9fd03d1f72ee4c785f8f5e4e76f2686f785c7507255c"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-11-11-12-42-47/data/anymal_state_odometry.tar",
+        "size": 11663360,
+        "sha256": "02d260451a3b7feaec3f65253dd880520297711127b7e56f73c34957c5d44b62"
+      },
+      "tf": {
+        "path": "2024-11-11-12-42-47/data/tf.tar",
+        "size": 30720,
+        "sha256": "7a41b46abc699f24551929079f5401659495b4dd9fd150fd85dfe35cea4e5243"
+      }
+    },
+    "2024-11-11-14-29-44": {
+      "prism_position": {
+        "path": "2024-11-11-14-29-44/data/prism_position.tar",
+        "size": 3061760,
+        "sha256": "89d242c02c2619bcb9bcf777b5aee8417ab9502d20aa6d0304d98b5162bae2d1"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-11-11-14-29-44/data/dlio_map_odometry.tar",
+        "size": 7147520,
+        "sha256": "1ce965cb8f5e325df26ae888e9880792585863e39ef46a5a6facba502691eef4"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-11-11-14-29-44/data/anymal_state_odometry.tar",
+        "size": 11048960,
+        "sha256": "b1ddb6dc24d920dd8a954f7e57ae01e65f7c863403eaf7f8ab22c7c1da60c166"
+      },
+      "tf": {
+        "path": "2024-11-11-14-29-44/data/tf.tar",
+        "size": 30720,
+        "sha256": "dda0857a0016633ecb5411faf07019426c9cc387117023440bf435b8f0ff25c9"
+      }
+    },
+    "2024-11-11-16-14-23": {
+      "prism_position": {
+        "path": "2024-11-11-16-14-23/data/prism_position.tar",
+        "size": 3061760,
+        "sha256": "9a21168ca6e3b87e2b2899ef53fed405bec905fb19ab622403eab1620a173268"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-11-11-16-14-23/data/dlio_map_odometry.tar",
+        "size": 7147520,
+        "sha256": "aa59727395d590e98ffa9eea0c1a27231ac098aed3b91132707e8458b601edee"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-11-11-16-14-23/data/anymal_state_odometry.tar",
+        "size": 11059200,
+        "sha256": "d7f471c0b0221edfb3ded079d3efba3ea1606d13a0bae6033712c9af536fefa1"
+      },
+      "tf": {
+        "path": "2024-11-11-16-14-23/data/tf.tar",
+        "size": 30720,
+        "sha256": "1ac1d2a72ad5be480708945faaf2d5f222c321ebc0c8e3748e272481fde368bb"
+      }
+    },
+    "2024-11-14-11-17-02": {
+      "prism_position": {
+        "path": "2024-11-14-11-17-02/data/prism_position.tar",
+        "size": 3051520,
+        "sha256": "dabe046637ad820e1b20a673f4fb5a53741a5c6a81b4cd0176fcdd96dcfb31f5"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-11-14-11-17-02/data/dlio_map_odometry.tar",
+        "size": 7239680,
+        "sha256": "eea5711a2ae7b72d2c133d4a5b0400ec0451eeec17a54c9e50087786ca6258b0"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-11-14-11-17-02/data/anymal_state_odometry.tar",
+        "size": 13045760,
+        "sha256": "4273a0913c46523b16983ca1b313653fd036d986624dbcde8e83cad6579eeeee"
+      },
+      "tf": {
+        "path": "2024-11-14-11-17-02/data/tf.tar",
+        "size": 30720,
+        "sha256": "6821d2f1b25ce1dd03e379805c36b9117c99143026892d949bd3c38203731c41"
+      }
+    },
+    "2024-11-14-12-01-26": {
+      "prism_position": {
+        "path": "2024-11-14-12-01-26/data/prism_position.tar",
+        "size": 3031040,
+        "sha256": "d24f92317eb2580f35c00fc07b901f4a0cb07ef0c85b15b109cc05e7227de6d7"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-11-14-12-01-26/data/dlio_map_odometry.tar",
+        "size": 7208960,
+        "sha256": "2e0e56ddf3c48cb3f7c6dac9a0c37f2c1cc67dbdc5a73d4aa6d76d882dbed648"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-11-14-12-01-26/data/anymal_state_odometry.tar",
+        "size": 12298240,
+        "sha256": "c27b868077efacc19842d1d99619d6e51d6a16e44adc8e5a2e7b2b9c31d6762d"
+      },
+      "tf": {
+        "path": "2024-11-14-12-01-26/data/tf.tar",
+        "size": 30720,
+        "sha256": "9d71bfc2a828ad79d2693293d8e10aff0f27e2bbb2e3b6b5eba4128f09524fa8"
+      }
+    },
+    "2024-11-14-13-45-37": {
+      "prism_position": {
+        "path": "2024-11-14-13-45-37/data/prism_position.tar",
+        "size": 3072000,
+        "sha256": "17c469bca702f4fa07245db9dfaaedb2fc992d3faadaa14978acb781b539f0a8"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-11-14-13-45-37/data/dlio_map_odometry.tar",
+        "size": 7127040,
+        "sha256": "72d90107fa6da96d65ed7748fbeb4658974046c3c560b7aa9e4eb58fd985276e"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-11-14-13-45-37/data/anymal_state_odometry.tar",
+        "size": 10465280,
+        "sha256": "73fbca1110339cc251f4c579a35418120c25e3af3949d3cade118c068c64c617"
+      },
+      "tf": {
+        "path": "2024-11-14-13-45-37/data/tf.tar",
+        "size": 30720,
+        "sha256": "cab72193f4cd4c94f5ad8c608813c35278224ed5f91dbc43f8aa1947b2bc818d"
+      }
+    },
+    "2024-11-14-14-36-02": {
+      "prism_position": {
+        "path": "2024-11-14-14-36-02/data/prism_position.tar",
+        "size": 3082240,
+        "sha256": "e30589c3bcdab36fc697e37a6bbf0300c3621f844d7a3222a13bc49cbd6cb4b0"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-11-14-14-36-02/data/dlio_map_odometry.tar",
+        "size": 7219200,
+        "sha256": "66e983a99561c01ddf7a091045ab1b0d49884ef6a2e071bb26ceb1e14aa07abe"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-11-14-14-36-02/data/anymal_state_odometry.tar",
+        "size": 12492800,
+        "sha256": "1025e53ad0ae1151c3e160c2672a24ee80ef27eee63d71dbd9f9bc16566fdf81"
+      },
+      "tf": {
+        "path": "2024-11-14-14-36-02/data/tf.tar",
+        "size": 30720,
+        "sha256": "e43355168b6c7bbb6b12c67ef29040b336ce106bc2c29c6f0d5c1241144c3a90"
+      }
+    },
+    "2024-11-14-15-22-43": {
+      "prism_position": {
+        "path": "2024-11-14-15-22-43/data/prism_position.tar",
+        "size": 3041280,
+        "sha256": "c8d9d9048c8cbdab4ead25a2ba53a588ba959cd3a7e684df3a54687ade1c21b8"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-11-14-15-22-43/data/dlio_map_odometry.tar",
+        "size": 7168000,
+        "sha256": "f79af398a70a82f15c38abcd050c3b56989814b72e18fcf5d359ae793929e8d5"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-11-14-15-22-43/data/anymal_state_odometry.tar",
+        "size": 11520000,
+        "sha256": "8693ed680548b75a7eb1d7f271aed07eb2a9fda9550130f814858648dc4dec96"
+      },
+      "tf": {
+        "path": "2024-11-14-15-22-43/data/tf.tar",
+        "size": 30720,
+        "sha256": "50aabc14e379bbeebdaaf0710a615fd4d2d506f3f368220b1bd4496a081f7418"
+      }
+    },
+    "2024-11-14-16-04-09": {
+      "prism_position": {
+        "path": "2024-11-14-16-04-09/data/prism_position.tar",
+        "size": 3061760,
+        "sha256": "e87733aaab0657be9e831d5a76e5d5e9e775985dfccbcdc6b81b656cccdc7a89"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-11-14-16-04-09/data/dlio_map_odometry.tar",
+        "size": 7219200,
+        "sha256": "917e595c83650d9fa16e35402ba1b95cecbef6a83b073b8d2b9183e35b403cf7"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-11-14-16-04-09/data/anymal_state_odometry.tar",
+        "size": 12605440,
+        "sha256": "9d266ec9cf302a4ef9a28fbd53d5223b193693125cbe9f599aa005bc9fc8a807"
+      },
+      "tf": {
+        "path": "2024-11-14-16-04-09/data/tf.tar",
+        "size": 30720,
+        "sha256": "10c2b881bbed2de43975cc485c87fc1f0ae664681e7ae0a6f93069f415cf8385"
+      }
+    },
+    "2024-11-15-10-16-35": {
+      "prism_position": {
+        "path": "2024-11-15-10-16-35/data/prism_position.tar",
+        "size": 3082240,
+        "sha256": "6815e468b41a5e56d81f48f5a34b1f9b2d9b9659bec6057dbf0b4c3752e5476f"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-11-15-10-16-35/data/dlio_map_odometry.tar",
+        "size": 7219200,
+        "sha256": "9635941f706d087bc33c20d5ee8ba9773c159859a559a46be15bbdd48be734ae"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-11-15-10-16-35/data/anymal_state_odometry.tar",
+        "size": 12472320,
+        "sha256": "c2961e130b280e183e3d0463414721514625b596d4165fcf335df6f32152df28"
+      },
+      "tf": {
+        "path": "2024-11-15-10-16-35/data/tf.tar",
+        "size": 30720,
+        "sha256": "2ca8da7e72d1e0bd4d4e40c8ab9e2f4ebabecccf00486ec182abe63407555ec6"
+      }
+    },
+    "2024-11-15-11-18-14": {
+      "prism_position": {
+        "path": "2024-11-15-11-18-14/data/prism_position.tar",
+        "size": 3031040,
+        "sha256": "03f1c2c712b876b2ed26ee5e8dc473ae0636ecdc3f08f08ffcfec2bf6a3c5e3f"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-11-15-11-18-14/data/dlio_map_odometry.tar",
+        "size": 7116800,
+        "sha256": "21aa77dea04993782073028c3b00345833f82ad49393058bc3b5196a5265106e"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-11-15-11-18-14/data/anymal_state_odometry.tar",
+        "size": 10383360,
+        "sha256": "ff1b991c14350d0aa176d7d9391054e44e380a1f677207287a52f505f207aa05"
+      },
+      "tf": {
+        "path": "2024-11-15-11-18-14/data/tf.tar",
+        "size": 30720,
+        "sha256": "0d9aceef38ebc1377297f1875430d52fadfaea0628751a78dc1a60f9a4ea1518"
+      }
+    },
+    "2024-11-15-11-37-15": {
+      "prism_position": {
+        "path": "2024-11-15-11-37-15/data/prism_position.tar",
+        "size": 3082240,
+        "sha256": "29c833786d26a60c0e78121c1074ad1a1e2a1110b88185b45c07ed3df86c8af5"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-11-15-11-37-15/data/dlio_map_odometry.tar",
+        "size": 7239680,
+        "sha256": "58050d71792b1b0e638d0a78d1bb76e1273dd212e27b286ff329e9d030f9affe"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-11-15-11-37-15/data/anymal_state_odometry.tar",
+        "size": 12994560,
+        "sha256": "26f4b2c0a94df767a2d4c39649392ed872e06aa02a95f60766d95a70d70a8752"
+      },
+      "tf": {
+        "path": "2024-11-15-11-37-15/data/tf.tar",
+        "size": 30720,
+        "sha256": "40f1601084b84abf0ed3af62052fc99019fc7f3c5afb3fa8e6d62e631fd96e5f"
+      }
+    },
+    "2024-11-15-12-06-03": {
+      "prism_position": {
+        "path": "2024-11-15-12-06-03/data/prism_position.tar",
+        "size": 3051520,
+        "sha256": "52f9f5467b47a2288569822c3f02b8007029295d254b3b9ffe059dba3d03290c"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-11-15-12-06-03/data/dlio_map_odometry.tar",
+        "size": 7075840,
+        "sha256": "27a31c4284d2c7d65335b159edc38ec6a6204c9237e27fd6ceec615f84c4744a"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-11-15-12-06-03/data/anymal_state_odometry.tar",
+        "size": 9533440,
+        "sha256": "94a839f9104cbd8b8e3aaecb5042856b86a92f608c0801e6fcb4322f717d435e"
+      },
+      "tf": {
+        "path": "2024-11-15-12-06-03/data/tf.tar",
+        "size": 30720,
+        "sha256": "fdcfdc8b73e024ce9d0cd42b2578319236c5b6b4bc5bef97b2763f6538d7bb0d"
+      }
+    },
+    "2024-11-15-14-14-12": {
+      "prism_position": {
+        "path": "2024-11-15-14-14-12/data/prism_position.tar",
+        "size": 3061760,
+        "sha256": "9fd8f3beefa1ab38381e4be8718c7cf5a5baef032e0ddf1b95925aaf62673400"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-11-15-14-14-12/data/dlio_map_odometry.tar",
+        "size": 7249920,
+        "sha256": "a5b3406827a771e2a75798ef21050d16ef4948246ae35f34a61bb83e05233eca"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-11-15-14-14-12/data/anymal_state_odometry.tar",
+        "size": 13127680,
+        "sha256": "7742b81597e8d1a0c6eeca9326947b4a26dd3c1be9faa1175f8cdfc8eca7f915"
+      },
+      "tf": {
+        "path": "2024-11-15-14-14-12/data/tf.tar",
+        "size": 30720,
+        "sha256": "08376aa1368f2c867eb323fb78de7a6f1438289776c1c4da769eb1c5a5d40a2d"
+      }
+    },
+    "2024-11-15-14-43-52": {
+      "prism_position": {
+        "path": "2024-11-15-14-43-52/data/prism_position.tar",
+        "size": 3020800,
+        "sha256": "35b6c56e9121b56d6d2ebc85c55e92028bbb8cbd11d4f05ff1431b1d14acab2e"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-11-15-14-43-52/data/dlio_map_odometry.tar",
+        "size": 7086080,
+        "sha256": "3e5594120b8abd76cff2887c7de6aa9eacb25059b34bfa3daa07c9b2764001e5"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-11-15-14-43-52/data/anymal_state_odometry.tar",
+        "size": 9820160,
+        "sha256": "bcab7222d90db7cdb9fa2192e6ccfaa7f3b032b75d92a52df58835f3b5d37017"
+      },
+      "tf": {
+        "path": "2024-11-15-14-43-52/data/tf.tar",
+        "size": 30720,
+        "sha256": "45de0ec98b845058f80ad5d364dcee8959a5278afdfc507258bce0bd79885b35"
+      }
+    },
+    "2024-11-15-16-41-14": {
+      "prism_position": {
+        "path": "2024-11-15-16-41-14/data/prism_position.tar",
+        "size": 3082240,
+        "sha256": "bc5ee65877ed5bbefeaa4cf897590336fc00dbe284e31a8015605390855eb935"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-11-15-16-41-14/data/dlio_map_odometry.tar",
+        "size": 7249920,
+        "sha256": "68ca0366947ccec282b83c5bdd22391aea5fac99c9d2be5bf64c31bd86c5f5da"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-11-15-16-41-14/data/anymal_state_odometry.tar",
+        "size": 13209600,
+        "sha256": "62d5a05ad4f31c1e662c6e6450091e096f89f5dd62e2580b1ab1d7e028c63de1"
+      },
+      "tf": {
+        "path": "2024-11-15-16-41-14/data/tf.tar",
+        "size": 30720,
+        "sha256": "3a28d024ce6dedb556842b81b7a4da51194a0881aa8772594c003ba6b0448b34"
+      }
+    },
+    "2024-11-18-12-05-01": {
+      "prism_position": {
+        "path": "2024-11-18-12-05-01/data/prism_position.tar",
+        "size": 3082240,
+        "sha256": "edac9ab517c79c4d51d879460413a82644a8282655fb487f2bd7518111ec4c43"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-11-18-12-05-01/data/dlio_map_odometry.tar",
+        "size": 7208960,
+        "sha256": "830d81265e03f7d13773757ff9641ceb888801c6cbd55fc0e67c278bbbd9b89b"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-11-18-12-05-01/data/anymal_state_odometry.tar",
+        "size": 12144640,
+        "sha256": "d9b9650c36a26c2056b6fa5e935a4be805036bb0da142dd4c4839137591713ec"
+      },
+      "tf": {
+        "path": "2024-11-18-12-05-01/data/tf.tar",
+        "size": 30720,
+        "sha256": "6690e19cd886c29c437364e9ed9733dcf594290f984fd1fad6925e89f6f7d9c1"
+      }
+    },
+    "2024-11-18-13-48-19": {
+      "prism_position": {
+        "path": "2024-11-18-13-48-19/data/prism_position.tar",
+        "size": 3051520,
+        "sha256": "73be6ea28d6ac41072de0ca80efc8e906dc1faee5124f591fd649819e8a397dc"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-11-18-13-48-19/data/dlio_map_odometry.tar",
+        "size": 7352320,
+        "sha256": "804858611ae1a3ca522d5840667b8745bb8e483e8a8ec9c994e885fcf9ff310e"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-11-18-13-48-19/data/anymal_state_odometry.tar",
+        "size": 15319040,
+        "sha256": "800ef6818c5fdd13d643d30d012cb7dbd754775755dcc570c1aa37142def8747"
+      },
+      "tf": {
+        "path": "2024-11-18-13-48-19/data/tf.tar",
+        "size": 30720,
+        "sha256": "6b8b59900ad4f680099e209a67b23be28d6ae3ce6fad788bc1430f18bb8f408e"
+      }
+    },
+    "2024-11-18-15-46-05": {
+      "prism_position": {
+        "path": "2024-11-18-15-46-05/data/prism_position.tar",
+        "size": 3031040,
+        "sha256": "d9f4eede82c6018dad3d92cd57dab28ad1030ff36ab62ea828f74051f57f2510"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-11-18-15-46-05/data/dlio_map_odometry.tar",
+        "size": 7178240,
+        "sha256": "78a3f97eae8cf91bb026053e63af495261990cc50d18da19b14faacedae93cf6"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-11-18-15-46-05/data/anymal_state_odometry.tar",
+        "size": 11704320,
+        "sha256": "ef0b0fd5680d42bb40763114ae953e7622070a567e307d5d9649d8ccd1e51b10"
+      },
+      "tf": {
+        "path": "2024-11-18-15-46-05/data/tf.tar",
+        "size": 30720,
+        "sha256": "ad8407db8ed26f6dfab16439d9c55e1abcd1d77f7d3a7f4a23dae7a2fc2b5258"
+      }
+    },
+    "2024-11-18-16-59-23": {
+      "prism_position": {
+        "path": "2024-11-18-16-59-23/data/prism_position.tar",
+        "size": 3041280,
+        "sha256": "dd428c1a4c908366425fcb3dad391704f0b417b79a2ff13712fa26a8df7cb763"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-11-18-16-59-23/data/dlio_map_odometry.tar",
+        "size": 7178240,
+        "sha256": "313f98e56405fe8b24ccf98d3b70f1ea0cc3726b2a44afd5a5e6ac93668307ff"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-11-18-16-59-23/data/anymal_state_odometry.tar",
+        "size": 11571200,
+        "sha256": "3414037bc5cca68037d6b7b8554493fd81bf13a721c0283d5ee040108f6d6c8c"
+      },
+      "tf": {
+        "path": "2024-11-18-16-59-23/data/tf.tar",
+        "size": 30720,
+        "sha256": "822bedf59b7f926868d56913c44cf6e89502acb43424ecc59d2cf19a775398c9"
+      }
+    },
+    "2024-11-18-17-13-09": {
+      "prism_position": {
+        "path": "2024-11-18-17-13-09/data/prism_position.tar",
+        "size": 3041280,
+        "sha256": "7ec7d6d845308b3998754f4defabadedcf7a5f41ce18f9423b2b807b3872c3b2"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-11-18-17-13-09/data/dlio_map_odometry.tar",
+        "size": 7157760,
+        "sha256": "5c280badee9548b5ba39ae03ebf369f91119ff016f3b861e38329680595f79b0"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-11-18-17-13-09/data/anymal_state_odometry.tar",
+        "size": 11130880,
+        "sha256": "06b9064a5aee0e60ae830a76921e3ed94aca0655cfa446a6de423919295b8504"
+      },
+      "tf": {
+        "path": "2024-11-18-17-13-09/data/tf.tar",
+        "size": 30720,
+        "sha256": "169ab09a9eb371cbc6c544e507ed0b1e7a0f4d10ef094adf2fd894802277a26c"
+      }
+    },
+    "2024-11-25-14-57-08": {
+      "prism_position": {
+        "path": "2024-11-25-14-57-08/data/prism_position.tar",
+        "size": 3051520,
+        "sha256": "fdeec6cacdc850914a746e1ad05dabf23063604f7e432ce62645a8d6fa162c16"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-11-25-14-57-08/data/dlio_map_odometry.tar",
+        "size": 7137280,
+        "sha256": "af721e21141aee66cbb5e8eea5ea94e400d53156207a1317cd04950d163bc170"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-11-25-14-57-08/data/anymal_state_odometry.tar",
+        "size": 10741760,
+        "sha256": "df07b6edff33a4180aa7ea0b0eeba9530a0b44cb80420bed4ff7ba379304d079"
+      },
+      "tf": {
+        "path": "2024-11-25-14-57-08/data/tf.tar",
+        "size": 30720,
+        "sha256": "c9d56e912c9904298300308e8dbdc5f00e87a0ce721b352c2d13dd507da7fd1f"
+      }
+    },
+    "2024-11-25-16-36-19": {
+      "prism_position": {
+        "path": "2024-11-25-16-36-19/data/prism_position.tar",
+        "size": 3051520,
+        "sha256": "69bbb44d24be249bddbecf6053b8e4bbe5a83189b62ef72527110cbceb57c622"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-11-25-16-36-19/data/dlio_map_odometry.tar",
+        "size": 7198720,
+        "sha256": "ebaa19135e6252110c5d54b9d175c98761c2124e6c223f210642d50427146b69"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-11-25-16-36-19/data/anymal_state_odometry.tar",
+        "size": 12042240,
+        "sha256": "d2171c9ca54b5eb7d8c91f64f89b6e0e56e88384d3dad9fb7289584f191b119d"
+      },
+      "tf": {
+        "path": "2024-11-25-16-36-19/data/tf.tar",
+        "size": 30720,
+        "sha256": "20ff10179eee6beb61efd936b1fb72f2dc46e58e1ffa13c7ee2d62f2f246ccef"
+      }
+    },
+    "2024-12-03-13-15-38": {
+      "prism_position": {
+        "path": "2024-12-03-13-15-38/data/prism_position.tar",
+        "size": 3112960,
+        "sha256": "5833050fc0a2bd7424d40b2acd882159a9b370e59a5c2f8d493ed995f709a41a"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-12-03-13-15-38/data/dlio_map_odometry.tar",
+        "size": 7239680,
+        "sha256": "dafbf49aa9fa3b3c6ec6032573cdd1c01e0caa70955648cd793cfddeb16b5bf7"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-12-03-13-15-38/data/anymal_state_odometry.tar",
+        "size": 12871680,
+        "sha256": "857ba412041f0f4a51a4728afa43c499573e864bc4be1d09560b82bc22a3e748"
+      },
+      "tf": {
+        "path": "2024-12-03-13-15-38/data/tf.tar",
+        "size": 30720,
+        "sha256": "dc3c88a6de86cdd97657f0d66340017ea926644bace3655e8f101434f6d21dbc"
+      }
+    },
+    "2024-12-03-13-26-40": {
+      "prism_position": {
+        "path": "2024-12-03-13-26-40/data/prism_position.tar",
+        "size": 3051520,
+        "sha256": "d4551f2be302635a3ff1d0fada71fd145ca65077fcb1544b1e6065e03c2505d9"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-12-03-13-26-40/data/dlio_map_odometry.tar",
+        "size": 7116800,
+        "sha256": "41b5b2e5a5697eee88d3aac11e08429a909bb3d611b963b9a8deeb169c718691"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-12-03-13-26-40/data/anymal_state_odometry.tar",
+        "size": 10250240,
+        "sha256": "c93d6d48f0df1beca5cad6ba1cf851bae436d662b8920cfdda967e60a8451a0b"
+      },
+      "tf": {
+        "path": "2024-12-03-13-26-40/data/tf.tar",
+        "size": 30720,
+        "sha256": "8f7dcc2a40d39a4277b95e4c751d13807fca79d95d6a61ade70d0fa9511e4b0d"
+      }
+    },
+    "2024-12-09-09-34-43": {
+      "prism_position": {
+        "path": "2024-12-09-09-34-43/data/prism_position.tar",
+        "size": 3082240,
+        "sha256": "a11b2c7f720927828f3757d0897f15344456b46ba8838226e47354da2dae7a82"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-12-09-09-34-43/data/dlio_map_odometry.tar",
+        "size": 7178240,
+        "sha256": "8918ef97f0476282fe9eba930ae18c84efd410a8aad8cb15d8ee238d64f0827f"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-12-09-09-34-43/data/anymal_state_odometry.tar",
+        "size": 11571200,
+        "sha256": "da2b7a59691f7eb8527b7b177aba167499428a6cd2d623dd5807a8aa6fb9340d"
+      },
+      "tf": {
+        "path": "2024-12-09-09-34-43/data/tf.tar",
+        "size": 30720,
+        "sha256": "16c4057d5ca570d0974aacd6334404919f0c7f43f80fb459aecc7ff217a1ea15"
+      }
+    },
+    "2024-12-09-09-41-46": {
+      "prism_position": {
+        "path": "2024-12-09-09-41-46/data/prism_position.tar",
+        "size": 3061760,
+        "sha256": "5910d85b95a403cb7c31d86e2f26414396b0a8068a482c12c1d025251481d9ca"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-12-09-09-41-46/data/dlio_map_odometry.tar",
+        "size": 7178240,
+        "sha256": "fa6b0e056119f64d991e0691c81e096bc7c1c8ea7feda619cb97d09f9bade969"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-12-09-09-41-46/data/anymal_state_odometry.tar",
+        "size": 11560960,
+        "sha256": "b2a9694a4757d03aecbf4d4ec4e64bd95e5ca6b768aaf3764a29f2e23e00da77"
+      },
+      "tf": {
+        "path": "2024-12-09-09-41-46/data/tf.tar",
+        "size": 30720,
+        "sha256": "aa1e12bf361f85b483a4adf56e778afd1915e9c55cffd7236890aad0d397a2a4"
+      }
+    },
+    "2024-12-09-11-28-28": {
+      "prism_position": {
+        "path": "2024-12-09-11-28-28/data/prism_position.tar",
+        "size": 3041280,
+        "sha256": "98fc0f1d9cb1dff5492352d7644b1435690090f7a325cc5a69d277387843b0de"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-12-09-11-28-28/data/dlio_map_odometry.tar",
+        "size": 7383040,
+        "sha256": "745686360c308300a3c09f84274c6a57e483fcd73aa421775d0fba623f6b3f68"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-12-09-11-28-28/data/anymal_state_odometry.tar",
+        "size": 16199680,
+        "sha256": "f183ef589d73f1a26aad93e2555319ab1116430bac60f012296cd5718bb6aa73"
+      },
+      "tf": {
+        "path": "2024-12-09-11-28-28/data/tf.tar",
+        "size": 30720,
+        "sha256": "c94204253897d57faba2dc8a9db502822b4ba9acf717b27dd233d1df6e33464a"
       }
     }
   }

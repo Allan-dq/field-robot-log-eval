@@ -48,7 +48,13 @@ class StaticTF:
         """Expresses a point given in frame `src` in frame `dst` (both in the static tree)."""
         up = self._chain_to(src)
         down = self._chain_to(dst)
-        common = next(f for f in up if f in down)
+        common = next((f for f in up if f in down), None)
+        if (
+            common is None
+            or (src not in self._edges and src != common)
+            or (dst not in self._edges and dst != common)
+        ):
+            raise KeyError(f"no static transform path from {src} to {dst}")
         p = np.asarray(point, dtype=float)
         for frame in up[: up.index(common)]:  # child -> parent: p_parent = R^T (p_child - t)
             _, q, t = self._edges[frame]

@@ -1,0 +1,16 @@
+# Regression gate rules. Written on 2026-11-24 before the fixture baseline was computed and before
+# any seeded fault was run. Reasons are in docs/regression_gate.md. Change only with a dated
+# amendment there.
+fixture: tests/fixtures/grandtour_10s
+baseline: config/gate_baseline.json
+rules:
+  # Data quality: no topic may fail, and no check that passes in the baseline may stop passing.
+  qc_no_fail: true
+  qc_no_new_failed_checks: true
+  # Evaluation, per estimator: APE RMSE may grow by at most this much over the baseline.
+  rmse_abs_margin_m: 0.01
+  # Evaluation, per estimator: the number of scored pairs may drop by at most this share.
+  pairs_max_drop: 0.05
+  # Every topic must ingest, and every estimator in the baseline must still be scored.
+  all_topics_ingested: true
+  all_estimators_scored: true

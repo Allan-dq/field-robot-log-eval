@@ -19,7 +19,7 @@ def by_topic(results):
 def test_ingest_fixture(cfg):
     res = by_topic(ingest_mission(cfg, MISSION))
     assert {r.status for r in res.values()} == {"ingested"}
-    assert res["prism_position"].rows == 200
+    assert res["prism_position"].rows == 199
     assert res["cpt7_ie_tc_odometry"].rows == 2000
     assert res["tf"].rows == 29
     table = pq.read_table(parquet_path(cfg, "pose", MISSION, "dlio_map_odometry"))

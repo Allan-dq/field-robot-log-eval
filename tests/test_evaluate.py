@@ -89,3 +89,14 @@ def test_differences_match_errors():
     err, _ = evaluate.ape_errors(r, e)
     diff, _ = evaluate.aligned_differences(r, e)
     assert np.allclose(np.linalg.norm(diff, axis=1), err)
+
+
+def test_sparser_estimate_is_interpolated_not_the_reference():
+    """evo's interpolation sync would resample the reference here (it has more poses)."""
+    ref, est = synthetic()
+    sparse = est.iloc[::2].reset_index(drop=True)  # 10 Hz estimate, 20 Hz reference
+    r = evaluate.reference_trajectory(ref)
+    ref_s, est_s = evaluate.associate(r, evaluate.prism_trajectory(sparse, LEVER))
+    assert np.isin(ref_s.timestamps, r.timestamps).all()
+    assert np.allclose(est_s.timestamps, ref_s.timestamps)
+    assert ref_s.num_poses > 0.9 * len(ref)

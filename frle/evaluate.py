@@ -3,6 +3,7 @@ intervals. Protocol: docs/evaluation.md."""
 
 from __future__ import annotations
 
+import copy
 import json
 from dataclasses import asdict, dataclass
 from pathlib import Path
@@ -10,7 +11,6 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 from evo.core import metrics, sync
-from evo.core.sync_method import SyncMethod
 from evo.core.trajectory import PoseTrajectory3D
 from scipy.optimize import least_squares
 from scipy.spatial.transform import Rotation
@@ -61,23 +61,37 @@ def reference_trajectory(ref: pd.DataFrame) -> PoseTrajectory3D:
     )
 
 
+def associate(
+    ref: PoseTrajectory3D, est: PoseTrajectory3D
+) -> tuple[PoseTrajectory3D, PoseTrajectory3D]:
+    """Keeps the reference stamps that have an estimate pose within MAX_DIFF_S and lie inside the
+    estimate's time range, and interpolates the estimate there. The estimate is always the one
+    resampled: evo's interpolation sync resamples whichever trajectory has more poses, which would
+    interpolate the ground truth when the estimate is sparser."""
+    idx_ref, _ = sync.matching_time_indices(ref.timestamps, est.timestamps, MAX_DIFF_S)
+    t = ref.timestamps[idx_ref]
+    inside = (t >= est.timestamps[0]) & (t <= est.timestamps[-1])
+    idx = np.asarray(idx_ref)[inside]
+    if len(idx) < 3:
+        raise ValueError(f"only {len(idx)} reference stamps overlap the estimate")
+    ref_s = copy.deepcopy(ref)
+    ref_s.reduce_to_ids(idx)
+    return ref_s, est.interpolate(ref_s.timestamps)
+
+
 def aligned_differences(
     ref: PoseTrajectory3D, est: PoseTrajectory3D
 ) -> tuple[np.ndarray, np.ndarray]:
     """Per-pair position differences (estimate - reference, m) after association and alignment,
     in the reference frame, and the reference timestamps."""
-    ref_s, est_s = sync.associate_trajectories(
-        ref, est, sync_method=SyncMethod.interpolation, max_diff=MAX_DIFF_S
-    )
+    ref_s, est_s = associate(ref, est)
     est_s.align(ref_s, correct_scale=False)
     return est_s.positions_xyz - ref_s.positions_xyz, ref_s.timestamps
 
 
 def ape_errors(ref: PoseTrajectory3D, est: PoseTrajectory3D) -> tuple[np.ndarray, np.ndarray]:
     """Per-pair APE translation errors (m) and their reference timestamps."""
-    ref_s, est_s = sync.associate_trajectories(
-        ref, est, sync_method=SyncMethod.interpolation, max_diff=MAX_DIFF_S
-    )
+    ref_s, est_s = associate(ref, est)
     est_s.align(ref_s, correct_scale=False)
     ape = metrics.APE(metrics.PoseRelation.translation_part)
     ape.process_data((ref_s, est_s))

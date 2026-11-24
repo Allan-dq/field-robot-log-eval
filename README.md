@@ -9,7 +9,7 @@ Independent project on public data; no affiliation with any company.
 - [x] Evaluation: three onboard estimators scored against the total-station prism with evo (APE translation, lever arm from the URDF calibration, 10 s block-bootstrap intervals, paired comparisons). Protocol: [docs/evaluation.md](docs/evaluation.md). Latest report: [reports/eval.md](reports/eval.md).
 - [ ] RPE / drift per distance, KISS-ICP run of our own.
 - [ ] Triage and failure attribution.
-- [ ] CI regression gate, tested with seeded faults.
+- [x] CI regression gate: the full pipeline runs on a committed 10 s fixture and is compared with a baseline under rules written in advance ([docs/regression_gate.md](docs/regression_gate.md)). 14 seeded faults (data problems and code bugs) are run through it: [reports/seeded_faults.md](reports/seeded_faults.md).
 - [ ] ROS 1 bag -> ROS 2 MCAP path, Airflow DAG, Docker compose.
 
 ## Run
@@ -17,6 +17,8 @@ Independent project on public data; no affiliation with any company.
 uv venv --python 3.13 && uv pip install -e ".[dev]"
 make all     # download (about 41.5 MB), ingest, qc, eval
 make test
+make gate    # regression gate on the fixture
+make faults  # seeded faults through the gate
 ```
 
 ## Data
@@ -32,4 +34,5 @@ Raw data is not committed; `data/manifest.json` lists paths, sizes and checksums
 - `frle/qc.py`: data-quality checks -> `reports/qc.{json,md}`
 - `frle/frames.py`: static-transform convention and prism lever arm
 - `frle/evaluate.py`: APE with evo, block bootstrap -> `reports/eval.{json,md}`
-- `scripts/make_fixture.py`: cuts the test fixture
+- `frle/gate.py`, `frle/faults.py`, `config/gate.yaml`: regression gate and seeded faults
+- `scripts/make_fixture.py`: cuts the test fixture (the 10 s window with the most turning)

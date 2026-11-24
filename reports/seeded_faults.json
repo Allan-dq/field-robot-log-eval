@@ -1,0 +1,156 @@
+[
+  {
+    "fault": "duplicate_stamp",
+    "kind": "data",
+    "description": "DLIO: one timestamp repeated",
+    "caught": true,
+    "problems": [
+      "qc: 2024-11-04-10-57-34/dlio_map_odometry fails ['unique_time']",
+      "qc: 2024-11-04-10-57-34/dlio_map_odometry newly failing ['unique_time']",
+      "eval: crashed (ValueError: Times must be in strictly increasing order.)",
+      "eval: 2024-11-04-10-57-34/dlio_map_odometry not scored",
+      "eval: 2024-11-04-10-57-34/anymal_state_odometry not scored",
+      "eval: 2024-11-04-10-57-34/cpt7_ie_tc_odometry not scored"
+    ]
+  },
+  {
+    "fault": "backward_stamp",
+    "kind": "data",
+    "description": "DLIO: two messages swapped",
+    "caught": true,
+    "problems": [
+      "qc: 2024-11-04-10-57-34/dlio_map_odometry fails ['monotonic_time']",
+      "qc: 2024-11-04-10-57-34/dlio_map_odometry newly failing ['monotonic_time']",
+      "eval: crashed (ValueError: Times must be in strictly increasing order.)",
+      "eval: 2024-11-04-10-57-34/dlio_map_odometry not scored",
+      "eval: 2024-11-04-10-57-34/anymal_state_odometry not scored",
+      "eval: 2024-11-04-10-57-34/cpt7_ie_tc_odometry not scored"
+    ]
+  },
+  {
+    "fault": "nan_position",
+    "kind": "data",
+    "description": "DLIO: one position is NaN",
+    "caught": true,
+    "problems": [
+      "qc: 2024-11-04-10-57-34/dlio_map_odometry fails ['finite_values']",
+      "qc: 2024-11-04-10-57-34/dlio_map_odometry newly failing ['finite_values']",
+      "eval: crashed (LinAlgError: SVD did not converge)",
+      "eval: 2024-11-04-10-57-34/dlio_map_odometry not scored",
+      "eval: 2024-11-04-10-57-34/anymal_state_odometry not scored",
+      "eval: 2024-11-04-10-57-34/cpt7_ie_tc_odometry not scored"
+    ]
+  },
+  {
+    "fault": "bad_quaternion",
+    "kind": "data",
+    "description": "leg odometry: one quaternion of norm 2",
+    "caught": true,
+    "problems": [
+      "qc: 2024-11-04-10-57-34/anymal_state_odometry fails ['unit_quaternion']",
+      "qc: 2024-11-04-10-57-34/anymal_state_odometry newly failing ['unit_quaternion']"
+    ]
+  },
+  {
+    "fault": "dropped_messages",
+    "kind": "data",
+    "description": "DLIO: 30 % of messages dropped at random",
+    "caught": true,
+    "problems": [
+      "qc: 2024-11-04-10-57-34/dlio_map_odometry newly failing ['regular_rate']",
+      "eval: 2024-11-04-10-57-34/dlio_map_odometry pairs 161 < 95% of 197"
+    ]
+  },
+  {
+    "fault": "ground_truth_gap",
+    "kind": "data",
+    "description": "prism: 3 s of ground truth missing",
+    "caught": true,
+    "problems": [
+      "qc: 2024-11-04-10-57-34/prism_position newly failing ['no_gaps']",
+      "eval: 2024-11-04-10-57-34/dlio_map_odometry pairs 139 < 95% of 197",
+      "eval: 2024-11-04-10-57-34/anymal_state_odometry pairs 141 < 95% of 199",
+      "eval: 2024-11-04-10-57-34/cpt7_ie_tc_odometry pairs 141 < 95% of 199"
+    ]
+  },
+  {
+    "fault": "time_offset",
+    "kind": "data",
+    "description": "DLIO: clock 0.1 s late",
+    "caught": true,
+    "problems": [
+      "eval: 2024-11-04-10-57-34/dlio_map_odometry RMSE 0.0593 m > limit 0.0226 m"
+    ]
+  },
+  {
+    "fault": "truncated_archive",
+    "kind": "data",
+    "description": "CPT7: archive cut in half",
+    "caught": true,
+    "problems": [
+      "ingest: 2024-11-04-10-57-34/cpt7_ie_tc_odometry failed",
+      "eval: 2024-11-04-10-57-34/cpt7_ie_tc_odometry not scored"
+    ]
+  },
+  {
+    "fault": "missing_frame",
+    "kind": "data",
+    "description": "tf: hesai_lidar frame missing",
+    "caught": true,
+    "problems": [
+      "eval: crashed (KeyError: 'no static transform path from box_base to hesai_lidar')",
+      "eval: 2024-11-04-10-57-34/dlio_map_odometry not scored",
+      "eval: 2024-11-04-10-57-34/anymal_state_odometry not scored",
+      "eval: 2024-11-04-10-57-34/cpt7_ie_tc_odometry not scored"
+    ]
+  },
+  {
+    "fault": "no_lever_arm",
+    "kind": "code",
+    "description": "prism lever arm ignored",
+    "caught": true,
+    "problems": [
+      "eval: 2024-11-04-10-57-34/anymal_state_odometry RMSE 0.3002 m > limit 0.1037 m",
+      "eval: 2024-11-04-10-57-34/cpt7_ie_tc_odometry RMSE 0.2498 m > limit 0.0156 m"
+    ]
+  },
+  {
+    "fault": "wrong_body_frame",
+    "kind": "code",
+    "description": "DLIO body frame set to base",
+    "caught": true,
+    "problems": [
+      "eval: 2024-11-04-10-57-34/dlio_map_odometry RMSE 0.3422 m > limit 0.0226 m"
+    ]
+  },
+  {
+    "fault": "ros_tf_reading",
+    "kind": "code",
+    "description": "static tf read the usual ROS way",
+    "caught": true,
+    "problems": [
+      "eval: 2024-11-04-10-57-34/dlio_map_odometry RMSE 0.4683 m > limit 0.0226 m",
+      "eval: 2024-11-04-10-57-34/anymal_state_odometry RMSE 0.1477 m > limit 0.1037 m"
+    ]
+  },
+  {
+    "fault": "quaternion_order",
+    "kind": "code",
+    "description": "pose quaternions read as (w, x, y, z)",
+    "caught": true,
+    "problems": [
+      "eval: 2024-11-04-10-57-34/dlio_map_odometry RMSE 0.1272 m > limit 0.0226 m",
+      "eval: 2024-11-04-10-57-34/anymal_state_odometry RMSE 0.2537 m > limit 0.1037 m",
+      "eval: 2024-11-04-10-57-34/cpt7_ie_tc_odometry RMSE 0.1241 m > limit 0.0156 m"
+    ]
+  },
+  {
+    "fault": "nearest_association",
+    "kind": "code",
+    "description": "nearest pose instead of interpolation",
+    "caught": true,
+    "problems": [
+      "eval: 2024-11-04-10-57-34/dlio_map_odometry RMSE 0.0266 m > limit 0.0226 m"
+    ]
+  }
+]

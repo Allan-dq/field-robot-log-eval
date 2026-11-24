@@ -15,7 +15,7 @@ Disclosure: while working out the frames (same day), a scratch script fitted a l
 - Cross-check, reported but not used: fit the lever arm together with the alignment per estimator and compare it with the URDF value. Only estimators that do not drift give a meaningful fit.
 
 ## Association, alignment, metric
-- Association: evo `associate_trajectories` with `sync_method=interpolation` and `max_diff=0.06` s. The estimate is interpolated at the prism timestamps; 0.06 s is just above half the slowest estimator's period (DLIO, 10 Hz). Interpolation avoids the repeated-pose problem of `nearest_time` (evo issue 804).
+- Association: prism stamps that have an estimate pose within `max_diff=0.06` s (evo `matching_time_indices`) and lie inside the estimate's time range; the estimate is interpolated there (evo `PoseTrajectory3D.interpolate`); 0.06 s is just above half the slowest estimator's period (DLIO, 10 Hz). Interpolation avoids the repeated-pose problem of `nearest_time` (evo issue 804).
 - Alignment: rigid SE(3) Umeyama over all pairs, no scale (as in GrandTour's config: `n_to_align: -1`, `correct_scale: False`).
 - Metric: APE, translation part, in metres: RMSE, median, max, the number of pairs and the time span covered. RMSE is also split into horizontal and vertical parts (axes of the total-station frame, whose z is vertical). Rotation error is not scored, because the prism gives no orientation.
 - Difference from GrandTour's own config: no "remove until 10 m of motion" step and no AP20 peak or velocity rejection. The data-quality step found no step faster than 3 m/s in this mission's prism data.
@@ -26,4 +26,5 @@ Disclosure: while working out the frames (same day), a scratch script fitted a l
 - Limitation: the alignment is computed once and held fixed in the resamples, so the intervals leave out alignment uncertainty.
 
 ## Amendments
+- 2026-11-24, while building the regression gate: the association no longer calls evo `associate_trajectories` with interpolation, because that resamples whichever trajectory has more poses. In the full mission that is always the estimate (the stated protocol), so the mission results did not change; on the 10 s fixture DLIO has fewer poses than the prism, and evo would have interpolated the ground truth. The estimate is now always the resampled one.
 - 2026-11-24, after the first run: added the horizontal/vertical RMSE split to the report, to show where the CPT7 error comes from (mostly vertical). No metric or setting changed.

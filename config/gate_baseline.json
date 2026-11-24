@@ -1,0 +1,43 @@
+{
+  "ingest": {
+    "2024-11-04-10-57-34/prism_position": "ingested",
+    "2024-11-04-10-57-34/cpt7_ie_tc_odometry": "ingested",
+    "2024-11-04-10-57-34/dlio_map_odometry": "ingested",
+    "2024-11-04-10-57-34/anymal_state_odometry": "ingested",
+    "2024-11-04-10-57-34/tf": "ingested"
+  },
+  "qc": {
+    "2024-11-04-10-57-34/prism_position": {
+      "status": "warn",
+      "failed_checks": [
+        "regular_rate"
+      ]
+    },
+    "2024-11-04-10-57-34/anymal_state_odometry": {
+      "status": "pass",
+      "failed_checks": []
+    },
+    "2024-11-04-10-57-34/cpt7_ie_tc_odometry": {
+      "status": "pass",
+      "failed_checks": []
+    },
+    "2024-11-04-10-57-34/dlio_map_odometry": {
+      "status": "pass",
+      "failed_checks": []
+    }
+  },
+  "eval": {
+    "2024-11-04-10-57-34/dlio_map_odometry": {
+      "rmse_m": 0.01255081801162282,
+      "pairs": 197
+    },
+    "2024-11-04-10-57-34/anymal_state_odometry": {
+      "rmse_m": 0.09374445600723302,
+      "pairs": 199
+    },
+    "2024-11-04-10-57-34/cpt7_ie_tc_odometry": {
+      "rmse_m": 0.00556031366590317,
+      "pairs": 199
+    }
+  }
+}

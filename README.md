@@ -1,7 +1,21 @@
 # field-robot-log-eval
 
-Work in progress. An ingest, data-quality and evaluation pipeline for public field-robot logs.
-Independent project on public data; no affiliation with any company.
+An ingest, data-quality and evaluation pipeline for public field-robot logs, with failure triage and a
+CI regression gate. Independent project on public data; no affiliation with any company.
+
+## Results so far
+- 42 public GrandTour missions (legged robot, ETH Zurich): every one scored against a total-station prism.
+  The onboard LiDAR-inertial odometry (DLIO) has a median APE of 2.4 cm across missions and beats the leg
+  odometry in 42 of 42 ([reports/summary.md](reports/summary.md)).
+- Our own KISS-ICP run on raw Livox clouds (one mission): 6.0 cm APE, against 2.0 cm for DLIO on the same
+  prism stamps ([reports/eval.md](reports/eval.md)).
+- Triage traces the worst missions to ground-truth outliers: one bad prism sample out of 3,385 makes one
+  mission's DLIO error 12× higher ([reports/triage.md](reports/triage.md)).
+- The CI regression gate catches 14 of 14 seeded data and frame faults
+  ([reports/seeded_faults.md](reports/seeded_faults.md)).
+
+Every number comes from the scripts here (`make all`, `make kiss`, `make faults`). The rules for each
+step were written before it was first run; later changes are dated in the docs.
 
 ## Status
 - [x] Ingest: GrandTour zarr topic archives (download with sha256 checks) into canonical Parquet tables with a versioned schema, DuckDB views on top. Re-runs are idempotent, one mission can be re-ingested alone, and a broken archive fails only its own topic.
@@ -30,6 +44,9 @@ Hugging Face `leggedrobotics/grand_tour_dataset`, CC BY-SA 4.0. Missions: all 42
 topics `prism_position`, `dlio_map_odometry`, `anymal_state_odometry`, `tf`, plus `cpt7_ie_tc_odometry` for 2024-11-04-10-57-34).
 Raw data is not committed; `data/manifest.json` lists paths, sizes and checksums. The 10 s test fixture in
 `tests/fixtures/grandtour_10s/` is a cut of that mission under the same license.
+
+## License
+Code: MIT ([LICENSE](LICENSE)). Data and the derived test fixture: CC BY-SA 4.0, see above.
 
 ## Layout
 - `frle/download.py`: manifest from the Hugging Face tree API, download, checksum checks

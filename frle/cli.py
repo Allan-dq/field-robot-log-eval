@@ -6,7 +6,7 @@ import argparse
 import sys
 from pathlib import Path
 
-from frle import config, download, ingest, qc
+from frle import config, download, evaluate, ingest, qc
 from frle.config import REPO
 
 
@@ -25,6 +25,9 @@ def main(argv: list[str] | None = None) -> int:
     i.add_argument("--force", action="store_true")
     q = sub.add_parser("qc", help="data-quality checks -> reports/qc.{json,md}")
     q.add_argument("--out", type=Path, default=REPO / "reports")
+    e = sub.add_parser("eval", help="APE against the prism -> reports/eval.{json,md}")
+    e.add_argument("--mission", action="append")
+    e.add_argument("--out", type=Path, default=REPO / "reports")
     args = p.parse_args(argv)
 
     cfg = config.load(data_dir=args.data_dir)
@@ -50,6 +53,11 @@ def main(argv: list[str] | None = None) -> int:
         for r in results:
             print(f"{r.status:5s} {r.mission} {r.topic}")
         return 1 if any(r.status == "fail" for r in results) else 0
+    if args.cmd == "eval":
+        results = [evaluate.evaluate_mission(cfg, m) for m in args.mission or cfg.missions]
+        evaluate.write_reports(results, args.out)
+        print((args.out / "eval.md").read_text())
+        return 0
     return 2
 
 

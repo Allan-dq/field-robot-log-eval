@@ -6,7 +6,7 @@ import argparse
 import sys
 from pathlib import Path
 
-from frle import config, download, evaluate, gate, ingest, qc, summary
+from frle import config, download, evaluate, gate, ingest, qc, summary, triage
 from frle.config import REPO
 
 
@@ -30,6 +30,8 @@ def main(argv: list[str] | None = None) -> int:
     e.add_argument("--out", type=Path, default=REPO / "reports")
     sm = sub.add_parser("summary", help="evaluation of all missions + summary -> reports/")
     sm.add_argument("--out", type=Path, default=REPO / "reports")
+    tr = sub.add_parser("triage", help="bad segments and their causes -> reports/triage.{json,md}")
+    tr.add_argument("--out", type=Path, default=REPO / "reports")
     g = sub.add_parser("gate", help="regression gate on the committed fixture")
     g.add_argument("--update-baseline", action="store_true")
     args = p.parse_args(argv)
@@ -66,6 +68,10 @@ def main(argv: list[str] | None = None) -> int:
         result = summary.run(cfg)
         summary.write_reports(result, args.out)
         print((args.out / "summary.md").read_text())
+        return 0
+    if args.cmd == "triage":
+        triage.run(cfg, args.out)
+        print((args.out / "triage.md").read_text())
         return 0
     if args.cmd == "gate":
         if args.update_baseline:

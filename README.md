@@ -8,7 +8,7 @@ Independent project on public data; no affiliation with any company.
 - [x] Data quality per mission and topic, with criteria written down before the first run: [docs/data_quality.md](docs/data_quality.md). Latest report: [reports/qc.md](reports/qc.md).
 - [x] Evaluation: three onboard estimators scored against the total-station prism with evo (APE translation, lever arm from the URDF calibration, 10 s block-bootstrap intervals, paired comparisons). Protocol: [docs/evaluation.md](docs/evaluation.md). Latest report: [reports/eval.md](reports/eval.md).
 - [x] Summary across missions: [reports/summary.md](reports/summary.md).
-- [ ] Triage: some missions have total-station outliers (QC `no_jumps` warnings) that dominate the RMSE; attribute them before comparing.
+- [x] Triage: bad segments per mission are attributed to ground-truth jumps, estimator input data, estimator jumps or drift, using the independent LiDAR and leg odometry as witnesses; missions with too little path are flagged. Rules: [docs/triage.md](docs/triage.md). Report and plots: [reports/triage.md](reports/triage.md).
 - [ ] RPE / drift per distance, KISS-ICP run of our own.
 - [ ] Triage and failure attribution.
 - [x] CI regression gate: the full pipeline runs on a committed 10 s fixture and is compared with a baseline under rules written in advance ([docs/regression_gate.md](docs/regression_gate.md)). 14 seeded faults (data problems and code bugs) are run through it: [reports/seeded_faults.md](reports/seeded_faults.md).
@@ -36,5 +36,6 @@ Raw data is not committed; `data/manifest.json` lists paths, sizes and checksums
 - `frle/qc.py`: data-quality checks -> `reports/qc.{json,md}`
 - `frle/frames.py`: static-transform convention and prism lever arm
 - `frle/evaluate.py`: APE with evo, block bootstrap -> `reports/eval.{json,md}`
+- `frle/summary.py`, `frle/triage.py`: cross-mission summary, failure attribution
 - `frle/gate.py`, `frle/faults.py`, `config/gate.yaml`: regression gate and seeded faults
 - `scripts/make_fixture.py`: cuts the test fixture (the 10 s window with the most turning)

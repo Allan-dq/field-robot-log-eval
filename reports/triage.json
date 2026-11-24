@@ -1,0 +1,1412 @@
+{
+  "missions": [
+    {
+      "mission": "2024-10-01-11-29-55",
+      "pairs": 4545,
+      "prism_path_m": 191.4820064419914,
+      "weak_alignment": false,
+      "events": {
+        "gt_jump": 0,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 0
+      },
+      "segments": [],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.038240221661433545,
+          "rmse_without_ground_truth_m": 0.038240221661433545,
+          "pairs_removed": 0
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 0.3327011333948509,
+          "rmse_without_ground_truth_m": 0.3327011333948509,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-10-01-11-47-44",
+      "pairs": 4684,
+      "prism_path_m": 182.3616505149315,
+      "weak_alignment": false,
+      "events": {
+        "gt_jump": 0,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 0
+      },
+      "segments": [
+        {
+          "mission": "2024-10-01-11-47-44",
+          "estimator": "dlio_map_odometry",
+          "start_s": 208.75808477401733,
+          "duration_s": 0.0,
+          "pairs": 1,
+          "max_error_m": 0.1189170961319399,
+          "cause": "drift"
+        }
+      ],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.018918706192077098,
+          "rmse_without_ground_truth_m": 0.018918706192077098,
+          "pairs_removed": 0
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 0.4656079335822213,
+          "rmse_without_ground_truth_m": 0.4656079335822213,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-10-01-12-00-49",
+      "pairs": 545,
+      "prism_path_m": 25.964660897935893,
+      "weak_alignment": true,
+      "events": {
+        "gt_jump": 0,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 0
+      },
+      "segments": [],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.01241862139290411,
+          "rmse_without_ground_truth_m": 0.01241862139290411,
+          "pairs_removed": 0
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 0.021499756999195128,
+          "rmse_without_ground_truth_m": 0.021499756999195128,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-11-02-17-10-25",
+      "pairs": 4197,
+      "prism_path_m": 139.39200167092156,
+      "weak_alignment": false,
+      "events": {
+        "gt_jump": 0,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 0
+      },
+      "segments": [
+        {
+          "mission": "2024-11-02-17-10-25",
+          "estimator": "dlio_map_odometry",
+          "start_s": 66.52572011947632,
+          "duration_s": 0.0,
+          "pairs": 1,
+          "max_error_m": 0.11307963055966613,
+          "cause": "drift"
+        },
+        {
+          "mission": "2024-11-02-17-10-25",
+          "estimator": "dlio_map_odometry",
+          "start_s": 68.5187201499939,
+          "duration_s": 0.0,
+          "pairs": 1,
+          "max_error_m": 0.14418768729151518,
+          "cause": "drift"
+        }
+      ],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.023501532751085106,
+          "rmse_without_ground_truth_m": 0.023501532751085106,
+          "pairs_removed": 0
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 0.11925094634054013,
+          "rmse_without_ground_truth_m": 0.11925094634054013,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-11-02-17-43-10",
+      "pairs": 2229,
+      "prism_path_m": 88.15947648541677,
+      "weak_alignment": false,
+      "events": {
+        "gt_jump": 0,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 0
+      },
+      "segments": [],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.010162073729740614,
+          "rmse_without_ground_truth_m": 0.010162073729740614,
+          "pairs_removed": 0
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 0.11594025215937491,
+          "rmse_without_ground_truth_m": 0.11594025215937491,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-11-02-21-12-51",
+      "pairs": 3958,
+      "prism_path_m": 49.30395985218699,
+      "weak_alignment": true,
+      "events": {
+        "gt_jump": 0,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 4
+      },
+      "segments": [],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.01345916830820274,
+          "rmse_without_ground_truth_m": 0.01345916830820274,
+          "pairs_removed": 0
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 4.348355258310673,
+          "rmse_without_ground_truth_m": 4.348355258310673,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-11-03-07-52-45",
+      "pairs": 1200,
+      "prism_path_m": 23.17091878026189,
+      "weak_alignment": true,
+      "events": {
+        "gt_jump": 2,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 2
+      },
+      "segments": [],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.3764441820577563,
+          "rmse_without_ground_truth_m": 0.3764441820577563,
+          "pairs_removed": 0
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 0.4241491360659129,
+          "rmse_without_ground_truth_m": 0.4241491360659129,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-11-03-08-17-23",
+      "pairs": 4606,
+      "prism_path_m": 141.02435945920467,
+      "weak_alignment": false,
+      "events": {
+        "gt_jump": 0,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 0
+      },
+      "segments": [],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.018012560016296746,
+          "rmse_without_ground_truth_m": 0.018012560016296746,
+          "pairs_removed": 0
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 2.5458287712839143,
+          "rmse_without_ground_truth_m": 2.5458287712839143,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-11-03-13-59-54",
+      "pairs": 3903,
+      "prism_path_m": 166.94002186547254,
+      "weak_alignment": false,
+      "events": {
+        "gt_jump": 0,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 0
+      },
+      "segments": [],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.03181619059393626,
+          "rmse_without_ground_truth_m": 0.03181619059393626,
+          "pairs_removed": 0
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 1.1052902527829365,
+          "rmse_without_ground_truth_m": 1.1052902527829365,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-11-04-10-57-34",
+      "pairs": 4359,
+      "prism_path_m": 176.36792532789212,
+      "weak_alignment": false,
+      "events": {
+        "gt_jump": 0,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 0
+      },
+      "segments": [
+        {
+          "mission": "2024-11-04-10-57-34",
+          "estimator": "dlio_map_odometry",
+          "start_s": 281.6507730484009,
+          "duration_s": 0.0,
+          "pairs": 1,
+          "max_error_m": 0.2290844935201003,
+          "cause": "drift"
+        }
+      ],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.019730103608191194,
+          "rmse_without_ground_truth_m": 0.019730103608191194,
+          "pairs_removed": 0
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 0.41824118785288045,
+          "rmse_without_ground_truth_m": 0.41824118785288045,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-11-04-12-55-59",
+      "pairs": 2178,
+      "prism_path_m": 125.32202561071013,
+      "weak_alignment": false,
+      "events": {
+        "gt_jump": 0,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 0
+      },
+      "segments": [],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.030108022180329853,
+          "rmse_without_ground_truth_m": 0.030108022180329853,
+          "pairs_removed": 0
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 1.454071423197724,
+          "rmse_without_ground_truth_m": 1.454071423197724,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-11-04-13-07-13",
+      "pairs": 2382,
+      "prism_path_m": 132.38678042260534,
+      "weak_alignment": false,
+      "events": {
+        "gt_jump": 0,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 0
+      },
+      "segments": [
+        {
+          "mission": "2024-11-04-13-07-13",
+          "estimator": "dlio_map_odometry",
+          "start_s": 94.69059109687805,
+          "duration_s": 0.0,
+          "pairs": 1,
+          "max_error_m": 0.2635178867536962,
+          "cause": "drift"
+        }
+      ],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.027753391118320776,
+          "rmse_without_ground_truth_m": 0.027753391118320776,
+          "pairs_removed": 0
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 0.5408499517112282,
+          "rmse_without_ground_truth_m": 0.5408499517112282,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-11-04-16-05-00",
+      "pairs": 5477,
+      "prism_path_m": 255.58444206457577,
+      "weak_alignment": false,
+      "events": {
+        "gt_jump": 0,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 0
+      },
+      "segments": [],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.04946387257498441,
+          "rmse_without_ground_truth_m": 0.04946387257498441,
+          "pairs_removed": 0
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 0.8449773562854338,
+          "rmse_without_ground_truth_m": 0.8449773562854338,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-11-11-12-07-40",
+      "pairs": 3385,
+      "prism_path_m": 362.2659449214497,
+      "weak_alignment": false,
+      "events": {
+        "gt_jump": 2,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 0
+      },
+      "segments": [
+        {
+          "mission": "2024-11-11-12-07-40",
+          "estimator": "dlio_map_odometry",
+          "start_s": 0.0,
+          "duration_s": 0.0,
+          "pairs": 1,
+          "max_error_m": 70.76102195841818,
+          "cause": "ground_truth"
+        },
+        {
+          "mission": "2024-11-11-12-07-40",
+          "estimator": "anymal_state_odometry",
+          "start_s": 0.0,
+          "duration_s": 0.0,
+          "pairs": 1,
+          "max_error_m": 68.5822160205618,
+          "cause": "ground_truth"
+        }
+      ],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 1.2204601438022804,
+          "rmse_without_ground_truth_m": 0.10157302953740609,
+          "pairs_removed": 1
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 5.140239241398353,
+          "rmse_without_ground_truth_m": 5.003992227541299,
+          "pairs_removed": 1
+        }
+      }
+    },
+    {
+      "mission": "2024-11-11-12-42-47",
+      "pairs": 7980,
+      "prism_path_m": 254.38947987363832,
+      "weak_alignment": false,
+      "events": {
+        "gt_jump": 0,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 0
+      },
+      "segments": [
+        {
+          "mission": "2024-11-11-12-42-47",
+          "estimator": "dlio_map_odometry",
+          "start_s": 13.757954120635986,
+          "duration_s": 0.12599802017211914,
+          "pairs": 4,
+          "max_error_m": 0.29180719330791816,
+          "cause": "estimate_data"
+        },
+        {
+          "mission": "2024-11-11-12-42-47",
+          "estimator": "dlio_map_odometry",
+          "start_s": 16.35593605041504,
+          "duration_s": 5.869980096817017,
+          "pairs": 112,
+          "max_error_m": 0.5639230850195702,
+          "cause": "drift"
+        }
+      ],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.06308357481553396,
+          "rmse_without_ground_truth_m": 0.06308357481553396,
+          "pairs_removed": 0
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 1.4666913466710816,
+          "rmse_without_ground_truth_m": 1.4666913466710816,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-11-11-14-29-44",
+      "pairs": 4312,
+      "prism_path_m": 155.02215890266623,
+      "weak_alignment": false,
+      "events": {
+        "gt_jump": 0,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 0
+      },
+      "segments": [],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.023920040263586052,
+          "rmse_without_ground_truth_m": 0.023920040263586052,
+          "pairs_removed": 0
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 0.9412145372885717,
+          "rmse_without_ground_truth_m": 0.9412145372885717,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-11-11-16-14-23",
+      "pairs": 3951,
+      "prism_path_m": 138.831771969863,
+      "weak_alignment": false,
+      "events": {
+        "gt_jump": 0,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 0
+      },
+      "segments": [],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.010198241519674198,
+          "rmse_without_ground_truth_m": 0.010198241519674198,
+          "pairs_removed": 0
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 0.3065644418157373,
+          "rmse_without_ground_truth_m": 0.3065644418157373,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-11-14-11-17-02",
+      "pairs": 3622,
+      "prism_path_m": 195.46028819740928,
+      "weak_alignment": false,
+      "events": {
+        "gt_jump": 0,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 0
+      },
+      "segments": [
+        {
+          "mission": "2024-11-14-11-17-02",
+          "estimator": "dlio_map_odometry",
+          "start_s": 312.60360312461853,
+          "duration_s": 1.2269978523254395,
+          "pairs": 21,
+          "max_error_m": 0.18580301218912118,
+          "cause": "drift"
+        }
+      ],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.04066435053520581,
+          "rmse_without_ground_truth_m": 0.04066435053520581,
+          "pairs_removed": 0
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 0.8816219750182409,
+          "rmse_without_ground_truth_m": 0.8816219750182409,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-11-14-12-01-26",
+      "pairs": 2346,
+      "prism_path_m": 125.7444319914645,
+      "weak_alignment": false,
+      "events": {
+        "gt_jump": 0,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 0
+      },
+      "segments": [
+        {
+          "mission": "2024-11-14-12-01-26",
+          "estimator": "dlio_map_odometry",
+          "start_s": 131.59641194343567,
+          "duration_s": 0.0,
+          "pairs": 1,
+          "max_error_m": 0.1052584552368156,
+          "cause": "drift"
+        },
+        {
+          "mission": "2024-11-14-12-01-26",
+          "estimator": "dlio_map_odometry",
+          "start_s": 134.15840196609497,
+          "duration_s": 0.0,
+          "pairs": 1,
+          "max_error_m": 0.10383377721686768,
+          "cause": "drift"
+        }
+      ],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.009971717559077276,
+          "rmse_without_ground_truth_m": 0.009971717559077276,
+          "pairs_removed": 0
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 0.7801154023070376,
+          "rmse_without_ground_truth_m": 0.7801154023070376,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-11-14-13-45-37",
+      "pairs": 4597,
+      "prism_path_m": 153.97605763359343,
+      "weak_alignment": false,
+      "events": {
+        "gt_jump": 0,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 0
+      },
+      "segments": [
+        {
+          "mission": "2024-11-14-13-45-37",
+          "estimator": "anymal_state_odometry",
+          "start_s": 0.0,
+          "duration_s": 12.258944034576416,
+          "pairs": 246,
+          "max_error_m": 1.8816906903218948,
+          "cause": "drift"
+        }
+      ],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.020621374527412292,
+          "rmse_without_ground_truth_m": 0.020621374527412292,
+          "pairs_removed": 0
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 0.8390358893370401,
+          "rmse_without_ground_truth_m": 0.8390358893370401,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-11-14-14-36-02",
+      "pairs": 6197,
+      "prism_path_m": 184.9650310168546,
+      "weak_alignment": false,
+      "events": {
+        "gt_jump": 0,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 2
+      },
+      "segments": [],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.038070672272193525,
+          "rmse_without_ground_truth_m": 0.038070672272193525,
+          "pairs_removed": 0
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 2.027681512490996,
+          "rmse_without_ground_truth_m": 2.027681512490996,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-11-14-15-22-43",
+      "pairs": 2634,
+      "prism_path_m": 141.759197495198,
+      "weak_alignment": false,
+      "events": {
+        "gt_jump": 0,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 0
+      },
+      "segments": [
+        {
+          "mission": "2024-11-14-15-22-43",
+          "estimator": "dlio_map_odometry",
+          "start_s": 60.18173289299011,
+          "duration_s": 0.0,
+          "pairs": 1,
+          "max_error_m": 0.12599425499374806,
+          "cause": "drift"
+        }
+      ],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.02044118769684135,
+          "rmse_without_ground_truth_m": 0.02044118769684135,
+          "pairs_removed": 0
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 0.8292470938055575,
+          "rmse_without_ground_truth_m": 0.8292470938055575,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-11-14-16-04-09",
+      "pairs": 4627,
+      "prism_path_m": 277.9179245935127,
+      "weak_alignment": false,
+      "events": {
+        "gt_jump": 0,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 2
+      },
+      "segments": [
+        {
+          "mission": "2024-11-14-16-04-09",
+          "estimator": "anymal_state_odometry",
+          "start_s": 0.0,
+          "duration_s": 8.722969055175781,
+          "pairs": 177,
+          "max_error_m": 9.132793292959114,
+          "cause": "drift"
+        }
+      ],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.06525953970287585,
+          "rmse_without_ground_truth_m": 0.06525953970287585,
+          "pairs_removed": 0
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 3.4992669454323706,
+          "rmse_without_ground_truth_m": 3.4992669454323706,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-11-15-10-16-35",
+      "pairs": 5490,
+      "prism_path_m": 275.25769851561745,
+      "weak_alignment": false,
+      "events": {
+        "gt_jump": 3,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 0
+      },
+      "segments": [
+        {
+          "mission": "2024-11-15-10-16-35",
+          "estimator": "dlio_map_odometry",
+          "start_s": 387.64225602149963,
+          "duration_s": 0.0,
+          "pairs": 1,
+          "max_error_m": 19.752302510945448,
+          "cause": "ground_truth"
+        },
+        {
+          "mission": "2024-11-15-10-16-35",
+          "estimator": "anymal_state_odometry",
+          "start_s": 376.3382999897003,
+          "duration_s": 9.538955926895142,
+          "pairs": 170,
+          "max_error_m": 2.5184474907574153,
+          "cause": "drift"
+        },
+        {
+          "mission": "2024-11-15-10-16-35",
+          "estimator": "anymal_state_odometry",
+          "start_s": 386.98325300216675,
+          "duration_s": 0.6590030193328857,
+          "pairs": 12,
+          "max_error_m": 21.620547010843367,
+          "cause": "ground_truth"
+        },
+        {
+          "mission": "2024-11-15-10-16-35",
+          "estimator": "anymal_state_odometry",
+          "start_s": 391.94322991371155,
+          "duration_s": 0.3469970226287842,
+          "pairs": 7,
+          "max_error_m": 2.6247558438601084,
+          "cause": "ground_truth"
+        },
+        {
+          "mission": "2024-11-15-10-16-35",
+          "estimator": "anymal_state_odometry",
+          "start_s": 393.3692219257355,
+          "duration_s": 0.1040029525756836,
+          "pairs": 3,
+          "max_error_m": 2.627036177400238,
+          "cause": "drift"
+        }
+      ],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.2692124121616601,
+          "rmse_without_ground_truth_m": 0.037541664539711014,
+          "pairs_removed": 1
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 0.9239816145312506,
+          "rmse_without_ground_truth_m": 0.8655705507747153,
+          "pairs_removed": 19
+        }
+      }
+    },
+    {
+      "mission": "2024-11-15-11-18-14",
+      "pairs": 1886,
+      "prism_path_m": 66.73296165232158,
+      "weak_alignment": false,
+      "events": {
+        "gt_jump": 2,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 0
+      },
+      "segments": [
+        {
+          "mission": "2024-11-15-11-18-14",
+          "estimator": "dlio_map_odometry",
+          "start_s": 55.100769996643066,
+          "duration_s": 0.0,
+          "pairs": 1,
+          "max_error_m": 2.78775833754931,
+          "cause": "ground_truth"
+        }
+      ],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.06586229145137773,
+          "rmse_without_ground_truth_m": 0.014740413388906158,
+          "pairs_removed": 1
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 0.9817385569318093,
+          "rmse_without_ground_truth_m": 0.9817385569318093,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-11-15-11-37-15",
+      "pairs": 6009,
+      "prism_path_m": 162.15464349568492,
+      "weak_alignment": false,
+      "events": {
+        "gt_jump": 0,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 0
+      },
+      "segments": [
+        {
+          "mission": "2024-11-15-11-37-15",
+          "estimator": "dlio_map_odometry",
+          "start_s": 62.58472299575806,
+          "duration_s": 0.0,
+          "pairs": 1,
+          "max_error_m": 0.130727954269898,
+          "cause": "drift"
+        }
+      ],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.025505566706199335,
+          "rmse_without_ground_truth_m": 0.025505566706199335,
+          "pairs_removed": 0
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 2.6276155965385404,
+          "rmse_without_ground_truth_m": 2.6276155965385404,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-11-15-12-06-03",
+      "pairs": 3317,
+      "prism_path_m": 73.08755215979347,
+      "weak_alignment": false,
+      "events": {
+        "gt_jump": 0,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 0
+      },
+      "segments": [],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.016235603705127492,
+          "rmse_without_ground_truth_m": 0.016235603705127492,
+          "pairs_removed": 0
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 2.279363699801667,
+          "rmse_without_ground_truth_m": 2.279363699801667,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-11-15-14-14-12",
+      "pairs": 4245,
+      "prism_path_m": 158.97980249802242,
+      "weak_alignment": false,
+      "events": {
+        "gt_jump": 0,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 2
+      },
+      "segments": [],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.02020482459411637,
+          "rmse_without_ground_truth_m": 0.02020482459411637,
+          "pairs_removed": 0
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 1.4091995653793392,
+          "rmse_without_ground_truth_m": 1.4091995653793392,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-11-15-14-43-52",
+      "pairs": 937,
+      "prism_path_m": 47.86575565258339,
+      "weak_alignment": true,
+      "events": {
+        "gt_jump": 0,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 0
+      },
+      "segments": [
+        {
+          "mission": "2024-11-15-14-43-52",
+          "estimator": "dlio_map_odometry",
+          "start_s": 7.030958890914917,
+          "duration_s": 0.0,
+          "pairs": 1,
+          "max_error_m": 0.137193330041687,
+          "cause": "drift"
+        },
+        {
+          "mission": "2024-11-15-14-43-52",
+          "estimator": "anymal_state_odometry",
+          "start_s": 0.0,
+          "duration_s": 2.4409749507904053,
+          "pairs": 49,
+          "max_error_m": 1.0098295018056114,
+          "cause": "drift"
+        },
+        {
+          "mission": "2024-11-15-14-43-52",
+          "estimator": "anymal_state_odometry",
+          "start_s": 3.882962942123413,
+          "duration_s": 1.0450100898742676,
+          "pairs": 5,
+          "max_error_m": 1.0546352912810617,
+          "cause": "drift"
+        },
+        {
+          "mission": "2024-11-15-14-43-52",
+          "estimator": "anymal_state_odometry",
+          "start_s": 7.030958890914917,
+          "duration_s": 0.0,
+          "pairs": 1,
+          "max_error_m": 1.079742538024066,
+          "cause": "drift"
+        },
+        {
+          "mission": "2024-11-15-14-43-52",
+          "estimator": "anymal_state_odometry",
+          "start_s": 146.18037605285645,
+          "duration_s": 2.741989850997925,
+          "pairs": 48,
+          "max_error_m": 1.2962663129189054,
+          "cause": "drift"
+        }
+      ],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.01648949581737297,
+          "rmse_without_ground_truth_m": 0.01648949581737297,
+          "pairs_removed": 0
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 0.5295830898371761,
+          "rmse_without_ground_truth_m": 0.5295830898371761,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-11-15-16-41-14",
+      "pairs": 5801,
+      "prism_path_m": 243.80752078308774,
+      "weak_alignment": false,
+      "events": {
+        "gt_jump": 0,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 2
+      },
+      "segments": [],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.0561359670672346,
+          "rmse_without_ground_truth_m": 0.0561359670672346,
+          "pairs_removed": 0
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 0.8500951209288373,
+          "rmse_without_ground_truth_m": 0.8500951209288373,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-11-18-12-05-01",
+      "pairs": 6138,
+      "prism_path_m": 179.36581298817512,
+      "weak_alignment": false,
+      "events": {
+        "gt_jump": 0,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 2
+      },
+      "segments": [],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.012827093874218543,
+          "rmse_without_ground_truth_m": 0.012827093874218543,
+          "pairs_removed": 0
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 0.8093930841147355,
+          "rmse_without_ground_truth_m": 0.8093930841147355,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-11-18-13-48-19",
+      "pairs": 3654,
+      "prism_path_m": 196.93075220446798,
+      "weak_alignment": false,
+      "events": {
+        "gt_jump": 3,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 0
+      },
+      "segments": [
+        {
+          "mission": "2024-11-18-13-48-19",
+          "estimator": "dlio_map_odometry",
+          "start_s": 332.28352189064026,
+          "duration_s": 6.607968091964722,
+          "pairs": 131,
+          "max_error_m": 0.7000707396869945,
+          "cause": "drift"
+        },
+        {
+          "mission": "2024-11-18-13-48-19",
+          "estimator": "dlio_map_odometry",
+          "start_s": 619.2742199897766,
+          "duration_s": 0.0,
+          "pairs": 1,
+          "max_error_m": 16.126115658428912,
+          "cause": "ground_truth"
+        },
+        {
+          "mission": "2024-11-18-13-48-19",
+          "estimator": "anymal_state_odometry",
+          "start_s": 0.0,
+          "duration_s": 16.429929971694946,
+          "pairs": 330,
+          "max_error_m": 2.282704706523798,
+          "cause": "drift"
+        },
+        {
+          "mission": "2024-11-18-13-48-19",
+          "estimator": "anymal_state_odometry",
+          "start_s": 619.2742199897766,
+          "duration_s": 0.0,
+          "pairs": 1,
+          "max_error_m": 16.157773713829606,
+          "cause": "ground_truth"
+        }
+      ],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.33046938359228173,
+          "rmse_without_ground_truth_m": 0.19506769380315894,
+          "pairs_removed": 1
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 0.8370150908517726,
+          "rmse_without_ground_truth_m": 0.7932955071062808,
+          "pairs_removed": 1
+        }
+      }
+    },
+    {
+      "mission": "2024-11-18-15-46-05",
+      "pairs": 1514,
+      "prism_path_m": 43.827971247083,
+      "weak_alignment": true,
+      "events": {
+        "gt_jump": 0,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 0
+      },
+      "segments": [],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.011665024028292949,
+          "rmse_without_ground_truth_m": 0.011665024028292949,
+          "pairs_removed": 0
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 0.17393047260262945,
+          "rmse_without_ground_truth_m": 0.17393047260262945,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-11-18-16-59-23",
+      "pairs": 2987,
+      "prism_path_m": 96.36823336055592,
+      "weak_alignment": false,
+      "events": {
+        "gt_jump": 0,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 0
+      },
+      "segments": [
+        {
+          "mission": "2024-11-18-16-59-23",
+          "estimator": "dlio_map_odometry",
+          "start_s": 206.20483803749084,
+          "duration_s": 0.4760019779205322,
+          "pairs": 11,
+          "max_error_m": 0.11918844470243568,
+          "cause": "drift"
+        },
+        {
+          "mission": "2024-11-18-16-59-23",
+          "estimator": "dlio_map_odometry",
+          "start_s": 208.8628339767456,
+          "duration_s": 2.9449920654296875,
+          "pairs": 59,
+          "max_error_m": 0.1242929686537175,
+          "cause": "drift"
+        }
+      ],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.025187568164684208,
+          "rmse_without_ground_truth_m": 0.025187568164684208,
+          "pairs_removed": 0
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 0.41402323180208206,
+          "rmse_without_ground_truth_m": 0.41402323180208206,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-11-18-17-13-09",
+      "pairs": 3173,
+      "prism_path_m": 96.97896258076102,
+      "weak_alignment": false,
+      "events": {
+        "gt_jump": 0,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 0
+      },
+      "segments": [],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.014385440888822456,
+          "rmse_without_ground_truth_m": 0.014385440888822456,
+          "pairs_removed": 0
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 0.21959016680463198,
+          "rmse_without_ground_truth_m": 0.21959016680463198,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-11-25-14-57-08",
+      "pairs": 3752,
+      "prism_path_m": 135.28976463943337,
+      "weak_alignment": false,
+      "events": {
+        "gt_jump": 2,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 0
+      },
+      "segments": [
+        {
+          "mission": "2024-11-25-14-57-08",
+          "estimator": "dlio_map_odometry",
+          "start_s": 54.32374310493469,
+          "duration_s": 0.0,
+          "pairs": 1,
+          "max_error_m": 0.10122850072468875,
+          "cause": "drift"
+        },
+        {
+          "mission": "2024-11-25-14-57-08",
+          "estimator": "dlio_map_odometry",
+          "start_s": 96.06455397605896,
+          "duration_s": 0.0,
+          "pairs": 1,
+          "max_error_m": 0.4337174220088829,
+          "cause": "ground_truth"
+        },
+        {
+          "mission": "2024-11-25-14-57-08",
+          "estimator": "anymal_state_odometry",
+          "start_s": 239.208890914917,
+          "duration_s": 2.520994186401367,
+          "pairs": 52,
+          "max_error_m": 0.9718472975703536,
+          "cause": "drift"
+        }
+      ],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.01478287012724208,
+          "rmse_without_ground_truth_m": 0.012978520787192365,
+          "pairs_removed": 1
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 0.2130476349515762,
+          "rmse_without_ground_truth_m": 0.2130476349515762,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-11-25-16-36-19",
+      "pairs": 3423,
+      "prism_path_m": 105.10114123031427,
+      "weak_alignment": false,
+      "events": {
+        "gt_jump": 0,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 0
+      },
+      "segments": [],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.019386387492945443,
+          "rmse_without_ground_truth_m": 0.019386387492945443,
+          "pairs_removed": 0
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 0.4981198990304769,
+          "rmse_without_ground_truth_m": 0.4981198990304769,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-12-03-13-15-38",
+      "pairs": 9234,
+      "prism_path_m": 306.27203918225894,
+      "weak_alignment": false,
+      "events": {
+        "gt_jump": 0,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 11
+      },
+      "segments": [],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.056143904946466705,
+          "rmse_without_ground_truth_m": 0.056143904946466705,
+          "pairs_removed": 0
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 1.3751077315624038,
+          "rmse_without_ground_truth_m": 1.3751077315624038,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-12-03-13-26-40",
+      "pairs": 4080,
+      "prism_path_m": 137.51089075464233,
+      "weak_alignment": false,
+      "events": {
+        "gt_jump": 0,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 0
+      },
+      "segments": [
+        {
+          "mission": "2024-12-03-13-26-40",
+          "estimator": "dlio_map_odometry",
+          "start_s": 184.98116493225098,
+          "duration_s": 0.0,
+          "pairs": 1,
+          "max_error_m": 0.19062035221802948,
+          "cause": "drift"
+        }
+      ],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.02021543376552945,
+          "rmse_without_ground_truth_m": 0.02021543376552945,
+          "pairs_removed": 0
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 0.30998943597935014,
+          "rmse_without_ground_truth_m": 0.30998943597935014,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-12-09-09-34-43",
+      "pairs": 5859,
+      "prism_path_m": 242.7915477579285,
+      "weak_alignment": false,
+      "events": {
+        "gt_jump": 0,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 0
+      },
+      "segments": [],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.09796415449865384,
+          "rmse_without_ground_truth_m": 0.09796415449865384,
+          "pairs_removed": 0
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 0.3971263435866856,
+          "rmse_without_ground_truth_m": 0.3971263435866856,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-12-09-09-41-46",
+      "pairs": 4768,
+      "prism_path_m": 218.65833276792551,
+      "weak_alignment": false,
+      "events": {
+        "gt_jump": 0,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 0
+      },
+      "segments": [],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.06360930114495042,
+          "rmse_without_ground_truth_m": 0.06360930114495042,
+          "pairs_removed": 0
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 0.5273464653316349,
+          "rmse_without_ground_truth_m": 0.5273464653316349,
+          "pairs_removed": 0
+        }
+      }
+    },
+    {
+      "mission": "2024-12-09-11-28-28",
+      "pairs": 2732,
+      "prism_path_m": 68.0874346347407,
+      "weak_alignment": false,
+      "events": {
+        "gt_jump": 0,
+        "est_jump_dlio": 0,
+        "est_jump_leg": 0
+      },
+      "segments": [],
+      "filtered": {
+        "dlio_map_odometry": {
+          "rmse_m": 0.022099414669116694,
+          "rmse_without_ground_truth_m": 0.022099414669116694,
+          "pairs_removed": 0
+        },
+        "anymal_state_odometry": {
+          "rmse_m": 0.22601416156079834,
+          "rmse_without_ground_truth_m": 0.22601416156079834,
+          "pairs_removed": 0
+        }
+      }
+    }
+  ],
+  "counts": {
+    "dlio_map_odometry": {
+      "ground_truth": {
+        "segments": 5,
+        "pairs": 5
+      },
+      "estimate_data": {
+        "segments": 1,
+        "pairs": 4
+      },
+      "estimator_jump": {
+        "segments": 0,
+        "pairs": 0
+      },
+      "drift": {
+        "segments": 17,
+        "pairs": 346
+      }
+    },
+    "anymal_state_odometry": {
+      "ground_truth": {
+        "segments": 4,
+        "pairs": 21
+      },
+      "estimate_data": {
+        "segments": 0,
+        "pairs": 0
+      },
+      "estimator_jump": {
+        "segments": 0,
+        "pairs": 0
+      },
+      "drift": {
+        "segments": 10,
+        "pairs": 1081
+      }
+    }
+  },
+  "medians": {
+    "dlio_map_odometry": {
+      "median_rmse_m": 0.02371078650733558,
+      "median_rmse_without_ground_truth_m": 0.0228004737101009
+    },
+    "anymal_state_odometry": {
+      "median_rmse_m": 0.8193200889601465,
+      "median_rmse_without_ground_truth_m": 0.8013442956105081
+    }
+  }
+}

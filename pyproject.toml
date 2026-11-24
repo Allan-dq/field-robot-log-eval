@@ -1,0 +1,36 @@
+[project]
+name = "field-robot-log-eval"
+version = "0.1.0"
+description = "Ingest, data-quality checks and evaluation for public field-robot logs"
+requires-python = ">=3.13"
+dependencies = [
+    "zarr>=2.18,<3",
+    "numpy>=2.0",
+    "pandas>=2.2",
+    "pyarrow>=17",
+    "duckdb>=1.1",
+    "pyyaml>=6",
+    "certifi",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+frle = "frle.cli:main"
+
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["frle"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint.isort]
+known-first-party = ["frle", "conftest"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,32 @@
+{
+  "source": "leggedrobotics/grand_tour_dataset",
+  "missions": {
+    "2024-11-04-10-57-34": {
+      "prism_position": {
+        "path": "2024-11-04-10-57-34/prism_position.tar",
+        "size": 30720,
+        "sha256": "56d223c86503a1fb05cf7ac51765d3e562b02320ca44f0ae9e0367d1e3293970"
+      },
+      "cpt7_ie_tc_odometry": {
+        "path": "2024-11-04-10-57-34/cpt7_ie_tc_odometry.tar",
+        "size": 92160,
+        "sha256": "754077bc3a4692521ebd2298e9f755f7151e71a2439b663f4dd848d3ff283b42"
+      },
+      "dlio_map_odometry": {
+        "path": "2024-11-04-10-57-34/dlio_map_odometry.tar",
+        "size": 40960,
+        "sha256": "a4b6559fa095784e409d25bc7ffbb4b5275cb0c3d4b0d25aacdd4de21db52e80"
+      },
+      "anymal_state_odometry": {
+        "path": "2024-11-04-10-57-34/anymal_state_odometry.tar",
+        "size": 40960,
+        "sha256": "03c130aa19eaa5e0a7b7499780392d7b83408dabfc6c48c4e49d6d999818eed5"
+      },
+      "tf": {
+        "path": "2024-11-04-10-57-34/tf.tar",
+        "size": 30720,
+        "sha256": "d19145def7dba2348732f122e12b5675ca2baa881c32aeb04477bc47b777f474"
+      }
+    }
+  }
+}

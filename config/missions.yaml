@@ -1,0 +1,15 @@
+# GrandTour (ETH Robotic Systems Lab), CC BY-SA 4.0.
+# Hugging Face dataset leggedrobotics/grand_tour_dataset, one zarr tar per topic.
+# sha256 and size come from the Hugging Face tree API (LFS oid), see frle/download.py.
+source:
+  repo: leggedrobotics/grand_tour_dataset
+  base_url: https://huggingface.co/datasets/leggedrobotics/grand_tour_dataset/resolve/main
+# Topics read by this pipeline and the canonical table each one goes to.
+topics:
+  prism_position: position          # Leica MS60 total station, prism position only (ground truth)
+  cpt7_ie_tc_odometry: pose         # NovAtel Inertial Explorer tightly coupled, post-processed
+  dlio_map_odometry: pose           # DLIO LiDAR-inertial odometry (Hesai XT32 + HG4930 IMU)
+  anymal_state_odometry: pose       # ANYmal leg-inertial odometry
+  tf: static_tf                     # static transforms
+missions:
+  - "2024-11-04-10-57-34"

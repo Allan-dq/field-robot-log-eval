@@ -1,0 +1,338 @@
+[
+  {
+    "mission": "2024-11-04-10-57-34",
+    "topic": "prism_position",
+    "table": "position",
+    "rows": 4359,
+    "status": "warn",
+    "metrics": {
+      "rows": 4359,
+      "median_period_s": 0.04300236701965332,
+      "median_rate_hz": 23.254533861891165,
+      "gaps": 11,
+      "longest_gap_s": 87.6476149559021,
+      "gap_time_s": 153.14833116531372,
+      "regular_share": 0.8331803579623681,
+      "max_speed_m_s": 1.4784604128034833,
+      "path_length_m": 176.36792532789215,
+      "duration_s": 372.06538248062134,
+      "coverage": 0.7886195408894184
+    },
+    "checks": [
+      {
+        "name": "non_empty",
+        "severity": "fail",
+        "passed": true,
+        "value": 4359,
+        "limit": "> 0 rows"
+      },
+      {
+        "name": "finite_values",
+        "severity": "fail",
+        "passed": true,
+        "value": 0,
+        "limit": "0 rows with NaN/inf"
+      },
+      {
+        "name": "monotonic_time",
+        "severity": "fail",
+        "passed": true,
+        "value": 0,
+        "limit": "0 backward steps"
+      },
+      {
+        "name": "unique_time",
+        "severity": "fail",
+        "passed": true,
+        "value": 0,
+        "limit": "0 repeated stamps"
+      },
+      {
+        "name": "no_gaps",
+        "severity": "warn",
+        "passed": false,
+        "value": 11,
+        "limit": "0 intervals > 5.0x median"
+      },
+      {
+        "name": "regular_rate",
+        "severity": "warn",
+        "passed": false,
+        "value": 0.8332,
+        "limit": ">= 0.95 of intervals in 0.5-1.5x median"
+      },
+      {
+        "name": "no_jumps",
+        "severity": "warn",
+        "passed": true,
+        "value": 0,
+        "limit": "0 steps faster than 3.0 m/s"
+      },
+      {
+        "name": "coverage",
+        "severity": "warn",
+        "passed": false,
+        "value": 0.7886,
+        "limit": ">= 0.9 of mission span"
+      }
+    ]
+  },
+  {
+    "mission": "2024-11-04-10-57-34",
+    "topic": "anymal_state_odometry",
+    "table": "pose",
+    "rows": 9405,
+    "status": "pass",
+    "metrics": {
+      "rows": 9405,
+      "median_period_s": 0.05000913143157959,
+      "median_rate_hz": 19.996348094310704,
+      "gaps": 0,
+      "longest_gap_s": 0.0,
+      "gap_time_s": 0.0,
+      "regular_share": 1.0,
+      "max_speed_m_s": 1.3559034121322626,
+      "path_length_m": 260.1961772456203,
+      "duration_s": 471.7499506473541,
+      "coverage": 0.9999082070299811,
+      "max_quat_norm_dev": 2.220446049250313e-16
+    },
+    "checks": [
+      {
+        "name": "non_empty",
+        "severity": "fail",
+        "passed": true,
+        "value": 9405,
+        "limit": "> 0 rows"
+      },
+      {
+        "name": "finite_values",
+        "severity": "fail",
+        "passed": true,
+        "value": 0,
+        "limit": "0 rows with NaN/inf"
+      },
+      {
+        "name": "monotonic_time",
+        "severity": "fail",
+        "passed": true,
+        "value": 0,
+        "limit": "0 backward steps"
+      },
+      {
+        "name": "unique_time",
+        "severity": "fail",
+        "passed": true,
+        "value": 0,
+        "limit": "0 repeated stamps"
+      },
+      {
+        "name": "no_gaps",
+        "severity": "warn",
+        "passed": true,
+        "value": 0,
+        "limit": "0 intervals > 5.0x median"
+      },
+      {
+        "name": "regular_rate",
+        "severity": "warn",
+        "passed": true,
+        "value": 1.0,
+        "limit": ">= 0.95 of intervals in 0.5-1.5x median"
+      },
+      {
+        "name": "no_jumps",
+        "severity": "warn",
+        "passed": true,
+        "value": 0,
+        "limit": "0 steps faster than 3.0 m/s"
+      },
+      {
+        "name": "coverage",
+        "severity": "warn",
+        "passed": true,
+        "value": 0.9999,
+        "limit": ">= 0.9 of mission span"
+      },
+      {
+        "name": "unit_quaternion",
+        "severity": "fail",
+        "passed": true,
+        "value": 0,
+        "limit": "0 rows with | |q|-1 | > 0.001"
+      }
+    ]
+  },
+  {
+    "mission": "2024-11-04-10-57-34",
+    "topic": "cpt7_ie_tc_odometry",
+    "table": "pose",
+    "rows": 94001,
+    "status": "pass",
+    "metrics": {
+      "rows": 94001,
+      "median_period_s": 0.005000114440917969,
+      "median_rate_hz": 199.99542246805265,
+      "gaps": 0,
+      "longest_gap_s": 0.0,
+      "gap_time_s": 0.0,
+      "regular_share": 1.0,
+      "max_speed_m_s": 1.5362672302308467,
+      "path_length_m": 264.97853421145635,
+      "duration_s": 470.0,
+      "coverage": 0.996199059818019,
+      "max_quat_norm_dev": 3.3306690738754696e-16
+    },
+    "checks": [
+      {
+        "name": "non_empty",
+        "severity": "fail",
+        "passed": true,
+        "value": 94001,
+        "limit": "> 0 rows"
+      },
+      {
+        "name": "finite_values",
+        "severity": "fail",
+        "passed": true,
+        "value": 0,
+        "limit": "0 rows with NaN/inf"
+      },
+      {
+        "name": "monotonic_time",
+        "severity": "fail",
+        "passed": true,
+        "value": 0,
+        "limit": "0 backward steps"
+      },
+      {
+        "name": "unique_time",
+        "severity": "fail",
+        "passed": true,
+        "value": 0,
+        "limit": "0 repeated stamps"
+      },
+      {
+        "name": "no_gaps",
+        "severity": "warn",
+        "passed": true,
+        "value": 0,
+        "limit": "0 intervals > 5.0x median"
+      },
+      {
+        "name": "regular_rate",
+        "severity": "warn",
+        "passed": true,
+        "value": 1.0,
+        "limit": ">= 0.95 of intervals in 0.5-1.5x median"
+      },
+      {
+        "name": "no_jumps",
+        "severity": "warn",
+        "passed": true,
+        "value": 0,
+        "limit": "0 steps faster than 3.0 m/s"
+      },
+      {
+        "name": "coverage",
+        "severity": "warn",
+        "passed": true,
+        "value": 0.9962,
+        "limit": ">= 0.9 of mission span"
+      },
+      {
+        "name": "unit_quaternion",
+        "severity": "fail",
+        "passed": true,
+        "value": 0,
+        "limit": "0 rows with | |q|-1 | > 0.001"
+      }
+    ]
+  },
+  {
+    "mission": "2024-11-04-10-57-34",
+    "topic": "dlio_map_odometry",
+    "table": "pose",
+    "rows": 4682,
+    "status": "pass",
+    "metrics": {
+      "rows": 4682,
+      "median_period_s": 0.10000181198120117,
+      "median_rate_hz": 9.9998188051631,
+      "gaps": 0,
+      "longest_gap_s": 0.0,
+      "gap_time_s": 0.0,
+      "regular_share": 1.0,
+      "max_speed_m_s": 1.669626530416316,
+      "path_length_m": 266.7473341289673,
+      "duration_s": 468.0986108779907,
+      "coverage": 0.9921689277846278,
+      "max_quat_norm_dev": 2.7405753755260776e-07
+    },
+    "checks": [
+      {
+        "name": "non_empty",
+        "severity": "fail",
+        "passed": true,
+        "value": 4682,
+        "limit": "> 0 rows"
+      },
+      {
+        "name": "finite_values",
+        "severity": "fail",
+        "passed": true,
+        "value": 0,
+        "limit": "0 rows with NaN/inf"
+      },
+      {
+        "name": "monotonic_time",
+        "severity": "fail",
+        "passed": true,
+        "value": 0,
+        "limit": "0 backward steps"
+      },
+      {
+        "name": "unique_time",
+        "severity": "fail",
+        "passed": true,
+        "value": 0,
+        "limit": "0 repeated stamps"
+      },
+      {
+        "name": "no_gaps",
+        "severity": "warn",
+        "passed": true,
+        "value": 0,
+        "limit": "0 intervals > 5.0x median"
+      },
+      {
+        "name": "regular_rate",
+        "severity": "warn",
+        "passed": true,
+        "value": 1.0,
+        "limit": ">= 0.95 of intervals in 0.5-1.5x median"
+      },
+      {
+        "name": "no_jumps",
+        "severity": "warn",
+        "passed": true,
+        "value": 0,
+        "limit": "0 steps faster than 3.0 m/s"
+      },
+      {
+        "name": "coverage",
+        "severity": "warn",
+        "passed": true,
+        "value": 0.9922,
+        "limit": ">= 0.9 of mission span"
+      },
+      {
+        "name": "unit_quaternion",
+        "severity": "fail",
+        "passed": true,
+        "value": 0,
+        "limit": "0 rows with | |q|-1 | > 0.001"
+      }
+    ]
+  }
+]

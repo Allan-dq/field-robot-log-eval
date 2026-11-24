@@ -209,6 +209,7 @@ APE, translation, against the prism (m). 95 % block bootstrap intervals (10 s bl
 | dlio_map_odometry | 4,359 | 372.1 | 0.020 | 0.017–0.022 | 0.016 | 0.014–0.019 | 0.229 | 0.018 | 0.008 |
 | anymal_state_odometry | 4,359 | 372.1 | 0.418 | 0.283–0.552 | 0.247 | 0.200–0.337 | 1.138 | 0.401 | 0.119 |
 | cpt7_ie_tc_odometry | 4,359 | 372.1 | 0.067 | 0.055–0.078 | 0.055 | 0.037–0.074 | 0.220 | 0.035 | 0.057 |
+| kiss_icp_livox | 4,359 | 372.1 | 0.060 | 0.053–0.067 | 0.047 | 0.043–0.053 | 0.192 | 0.056 | 0.020 |
 
 Paired RMSE difference (a − b) on the same prism timestamps:
 
@@ -216,7 +217,10 @@ Paired RMSE difference (a − b) on the same prism timestamps:
 |---|---|---|---|---|
 | dlio_map_odometry | anymal_state_odometry | 4,359 | -0.399 | -0.531 to -0.265 |
 | dlio_map_odometry | cpt7_ie_tc_odometry | 4,359 | -0.047 | -0.058 to -0.037 |
+| dlio_map_odometry | kiss_icp_livox | 4,359 | -0.040 | -0.046 to -0.034 |
 | anymal_state_odometry | cpt7_ie_tc_odometry | 4,359 | +0.351 | +0.217 to +0.485 |
+| anymal_state_odometry | kiss_icp_livox | 4,359 | +0.359 | +0.227 to +0.491 |
+| cpt7_ie_tc_odometry | kiss_icp_livox | 4,359 | +0.007 | -0.005 to +0.021 |
 
 Lever-arm cross-check (fitted with the alignment vs URDF, body frame, m):
 
@@ -225,6 +229,7 @@ Lever-arm cross-check (fitted with the alignment vs URDF, body frame, m):
 | dlio_map_odometry | [-0.0016, -0.0062, 0.2221] | [-0.0009, 0.0027, 0.2143] | 0.012 | 0.018 |
 | anymal_state_odometry | [0.3852, 0.0022, 0.5152] | [0.4598, 0.007, -0.7398] | 1.257 | 0.402 |
 | cpt7_ie_tc_odometry | [0.3088, -0.0383, -0.2349] | [0.2998, -0.0416, -0.2635] | 0.030 | 0.066 |
+| kiss_icp_livox | [0.0054, 0.0066, -0.1255] | [-0.0054, -0.0053, -0.1879] | 0.064 | 0.057 |
 
 ## Mission 2024-11-04-12-55-59
 

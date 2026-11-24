@@ -133,6 +133,8 @@ def ingest_mission(cfg: Config, mission: str, force: bool = False) -> list[Topic
     files = load_manifest(cfg)["missions"][mission]
     results = []
     for topic, table in cfg.topics_for(mission).items():
+        if table not in schema.TABLES:  # raw sensor archives (point clouds) are not ingested
+            continue
         res = TopicResult(mission=mission, topic=topic, table=table, status="failed")
         tar_path = archive_path(cfg, mission, topic)
         out = parquet_path(cfg, table, mission, topic)

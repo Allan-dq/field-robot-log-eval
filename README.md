@@ -9,7 +9,8 @@ Independent project on public data; no affiliation with any company.
 - [x] Evaluation: three onboard estimators scored against the total-station prism with evo (APE translation, lever arm from the URDF calibration, 10 s block-bootstrap intervals, paired comparisons). Protocol: [docs/evaluation.md](docs/evaluation.md). Latest report: [reports/eval.md](reports/eval.md).
 - [x] Summary across missions: [reports/summary.md](reports/summary.md).
 - [x] Triage: bad segments per mission are attributed to ground-truth jumps, estimator input data, estimator jumps or drift, using the independent LiDAR and leg odometry as witnesses; missions with too little path are flagged. Rules: [docs/triage.md](docs/triage.md). Report and plots: [reports/triage.md](reports/triage.md).
-- [ ] RPE / drift per distance, KISS-ICP run of our own.
+- [x] Our own odometry: KISS-ICP 1.3.0 (defaults, LiDAR only) on the raw Livox clouds of one mission, scored with the same protocol. Rules: [docs/kiss_icp.md](docs/kiss_icp.md).
+- [ ] RPE / drift per distance; KISS-ICP on more missions.
 - [ ] Triage and failure attribution.
 - [x] CI regression gate: the full pipeline runs on a committed 10 s fixture and is compared with a baseline under rules written in advance ([docs/regression_gate.md](docs/regression_gate.md)). 14 seeded faults (data problems and code bugs) are run through it: [reports/seeded_faults.md](reports/seeded_faults.md).
 - [ ] ROS 1 bag -> ROS 2 MCAP path, Airflow DAG, Docker compose.

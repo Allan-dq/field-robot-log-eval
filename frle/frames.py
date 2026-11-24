@@ -26,6 +26,7 @@ BODY_FRAME = {
     "dlio_map_odometry": "hesai_lidar",
     "anymal_state_odometry": "base",
     "cpt7_ie_tc_odometry": "cpt7_imu",
+    "kiss_icp_livox": "livox_lidar",  # our KISS-ICP run on the raw Livox clouds (docs/kiss_icp.md)
 }
 
 

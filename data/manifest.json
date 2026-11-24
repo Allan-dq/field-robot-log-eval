@@ -224,6 +224,11 @@
         "path": "2024-11-04-10-57-34/data/tf.tar",
         "size": 30720,
         "sha256": "f3c49b62cf38b777756024b57b0b2cd0852fc12ea91d45aeffa88bdbfb193aba"
+      },
+      "livox_points": {
+        "path": "2024-11-04-10-57-34/data/livox_points.tar",
+        "size": 776683520,
+        "sha256": "35d3daf95174cf21372e3aa2f5a52218c8e38379de34244391f5f78f4b86c18b"
       }
     },
     "2024-11-04-12-55-59": {

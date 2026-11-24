@@ -7,3 +7,4 @@ data/raw/
 data/lake/
 *.duckdb
 *.egg-info/
+data/work/

@@ -34,3 +34,10 @@ def test_lever_arms(tf):
     assert np.allclose(prism_in_body(tf, "cpt7_ie_tc_odometry"), PRISM_IN_BOX_BASE)
     # The prism sits on top of the robot, so it is above the base.
     assert prism_in_body(tf, "anymal_state_odometry")[2] > 0.3
+
+
+def test_kiss_icp_body_frame_is_the_livox(tf):
+    """The Livox is mounted upside down (dataset description), so the prism, which sits above
+    the box, has a negative z in the Livox frame."""
+    arm = prism_in_body(tf, "kiss_icp_livox")
+    assert arm[2] < 0

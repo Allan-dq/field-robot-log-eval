@@ -1,6 +1,6 @@
 PY := .venv/bin/python
 
-.PHONY: data ingest qc eval summary triage gate faults test lint all
+.PHONY: data ingest qc eval summary triage kiss gate faults test lint all
 data:        ## download and verify the configured GrandTour topics (about 932 MB, 42 missions)
 	$(PY) -m frle download
 ingest:      ## archives -> Parquet lake (idempotent; add ARGS=--force to rebuild)
@@ -13,6 +13,8 @@ summary:     ## evaluation of all missions + summary -> reports/summary.{json,md
 	MPLBACKEND=Agg $(PY) -m frle summary
 triage:      ## bad segments and causes -> reports/triage.{json,md} + plots
 	MPLBACKEND=Agg $(PY) -m frle triage
+kiss:        ## KISS-ICP on the raw Livox clouds of 2024-11-04-10-57-34 (needs .[lidar]; 777 MB archive)
+	$(PY) scripts/run_kiss_icp.py
 gate:        ## regression gate on the committed fixture
 	MPLBACKEND=Agg $(PY) -m frle gate
 faults:      ## run every seeded fault through the gate -> reports/seeded_faults.{json,md}

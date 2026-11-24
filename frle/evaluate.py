@@ -22,7 +22,7 @@ MAX_DIFF_S = 0.06
 BLOCK_S = 10.0
 N_BOOT = 2000
 SEED = 0
-ESTIMATORS = ("dlio_map_odometry", "anymal_state_odometry", "cpt7_ie_tc_odometry")
+ESTIMATORS = ("dlio_map_odometry", "anymal_state_odometry", "cpt7_ie_tc_odometry", "kiss_icp_livox")
 
 
 @dataclass
